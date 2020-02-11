@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Windows 8 Mobile Fix -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Type E: 04. The Accessibility Issue.</title>
+
+<!-- Welcome to Type E: 04. The Accessibility Issue.
+
+	EEEEEEE
+	EE
+	EEEEEEE  XX
+	EE
+	EE
+	EEEEEEE  XX
+
+-->
+
+<style type="text/css">
+
+/* Resolves line-height issues in Outlook.com */
+	.ExternalClass * {line-height:100%;}
+/* Preheader */
+	span[class="preHeader"] {display:none !important;}
+/* Hybrid: Setting a width and a max-width */
+	.mainContent {width:100%; max-width:600px;}
+/* Restyling of 'Blue Links' in iOS */
+	.appleBlueLinks a {color:#000001 !important; text-decoration:none; pointer-events:none !important;}
+/* Textlink Hover */
+	a:hover.textLink {-webkit-transition:all 0.5s ease; -moz-transition:all 2s ease; transition:all 2s ease; color:#ee0000 !important;}
+
+@media only screen and (min-device-width:600px), screen and (min-width:600px) {
+	table[class="mainContent"] {width:600px !important; height:auto !important;}
+}
+
+/* Style Switcher Styles for viewport widths over 731px */
+
+/* Supported at the time of coding on:
+
+	Apple Mail 7
+	Apple Mail 8
+	Thunderbird
+	Outlook 2011 (OSX)
+	Outlook 2016 (OSX)
+	AOL Mail
+
+*/
+
+@media only screen and (max-device-width:730px), screen and (max-width:730px) {
+	.standard-layout + label, .large-layout + label, .contrast-layout + label {display:none !important;}
+}
+
+@media only screen and (min-device-width:769px), screen and (min-width:769px) {
+	* {transition:all 0.3s !important;}
+
+/* Buttons */
+	.layout-buttons {display:block !important; width:40px !important; padding:10px 0 !important; font-size:14px !important; line-height:14px !important; text-align:center !important; border:1px solid black !important; cursor:pointer !important; position:fixed !important;}
+	input[type="radio"]:checked + label {color:#ffffff !important; border-color:#e83737 !important; background-color:#e83737 !important;}
+	.standard-layout + label {font-family:Arial !important; left:10px !important; top:10px !important; position:fixed !important; background-color:#ffffff !important;}
+	.large-layout + label {font-family:Arial !important; font-size:20px !important; left:10px !important; top:50px !important; position:fixed !important; background-color:#ffffff !important;}
+	.contrast-layout + label {font-family:Arial !important; color:#ffffff !important; left:10px !important; top:90px !important; position:fixed !important; background-color:#000033 !important;}
+
+/* Button Label */
+	.standard-layout + label::after {content: "S";}
+	.large-layout + label::after {content: "L";}
+	.contrast-layout + label::after {content: "C";}
+/* Button Label End */
+
+/* Standard Layout */
+	.standard-layout:checked ~ .main-wrapper {background:#ffffff !important;}
+	.standard-layout:checked ~ .main-wrapper td {font-size:14px !important; line-height:21px !important;}
+	.standard-layout:checked ~ .main-wrapper td.preHeader {font-size:10px !important; line-height:15px !important;}
+	.standard-layout:checked ~ .main-wrapper h2 {font-size:15px !important; line-height:25px !important;}
+	.standard-layout:checked ~ .main-wrapper h3 {color:#666666 !important;}
+	.standard-layout:checked ~ .main-wrapper p {font-size:14px !important; line-height:21px !important;}
+	.standard-layout:checked ~ .main-wrapper td.codeText {font-size:17px !important;}
+	.standard-layout:checked ~ .main-wrapper td.colophon {font-size:12px !important; line-height:18px !important;}
+	.standard-layout:checked ~ .main-wrapper .boxOut {border:1px solid #6699ff !important;}
+	.standard-layout:checked ~ .main-wrapper .horizontalRule {color:#666666 !important;}
+/* Standard Layout End */
+
+/* Large Layout */
+	.large-layout:checked ~ .main-wrapper .preHeader {font-size:15px !important; line-height:20px !important;}
+	.large-layout:checked ~ .main-wrapper span.footer {font-size:15px !important; line-height:20px !important;}
+	.large-layout:checked ~ .main-wrapper .unsubscribe {font-size:15px !important; line-height:20px !important;}
+	.large-layout:checked ~ .main-wrapper td {font-family:Arial; font-size:20px !important; line-height:30px !important;}
+	.large-layout:checked ~ .main-wrapper h1 {font-size:120px !important; line-height:140px !important;}
+	.large-layout:checked ~ .main-wrapper h2 {font-size:25px !important; line-height:30px !important;}
+	.large-layout:checked ~ .main-wrapper h3 {font-size:30px !important; line-height:35px !important;}
+	.large-layout:checked ~ .main-wrapper h4 {font-size:22px !important; line-height:27px !important;}
+	.large-layout:checked ~ .main-wrapper h5 {font-size:22px !important; line-height:27px !important;}
+	.large-layout:checked ~ .main-wrapper p {font-family:Arial; font-size:20px !important; line-height:30px !important;}
+/* Large Layout End */
+
+/* Contrast Layout */
+	.contrast-layout:checked ~ .body {background-color:#000033 !important;}
+	.contrast-layout:checked ~ .main-wrapper td {color:#ffffff !important; background-image:none !important; background-color:#000033 !important;}
+	.contrast-layout:checked ~ .main-wrapper .preHeader a {color:#ff6666 !important;}
+	.contrast-layout:checked ~ .main-wrapper td.legend {color:#003f87 !important; background-color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper td.sectionHead {border-color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper td.sectionBody {border-color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper h1 {color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper h2 {font-size:15px !important; line-height:25px !important;}
+	.contrast-layout:checked ~ .main-wrapper h2.issue {color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper h3 {color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper h4 {color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper h5 {color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper p {color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper td.codeText {border: 1px dotted #ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper .codeText {color:#ff6666 !important; border-bottom:1px dotted #ff6666 !important;}
+	.contrast-layout:checked ~ .main-wrapper a.textLink {color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper .colophon {border:1px solid #ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper .boxOut {border:1px solid #ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper .horizontalRule {color:#ffffff !important;}
+	.contrast-layout:checked ~ .main-wrapper .beyondTheEnvelope {color:#ff6666 !important;}
+	.contrast-layout:checked ~ .main-wrapper .unsubscribe a {color:#ff6666 !important;}
+	.contrast-layout:checked ~ .main-wrapper .typeFile {color:#ff6666 !important;}
+	.contrast-layout:checked ~ .main-wrapper span.footer {color:#ffffff !important;}
+/* Contrast Layout End */
+}
+
+/* Style Switcher Styles for viewport widths over 731px End */
+
+/* Responsive styles on a viewport width up to 500px */
+@media only screen and (max-device-width:500px), screen and (max-width:500px) {
+	table[class="mainContent"] {width:99% !important;}
+	table[class="emailWidth"] {display:block !important; width:100% !important;}
+	td[class="columnWrap"] {display:block !important; width:100% !important;}
+	table[class="tableImageResize"] {display:block !important; width:100% !important;}
+	td[class="tdImageResize"] {display:block !important; width:100% !important;}
+	img[class="imgImageResize"] {display:block !important; width:100% !important; height:auto !important;}
+	.masthead {line-height:110% !important;}
+	span.emoticon:before {content:'\1F914';}
+}
+/* Responsive styles on a viewport width up to 500px End */
+
+/* Hide Style Switcher from Outlook.com */
+	.ExternalClass .layout-buttons {display:none !important;}
+/* Hide Style Switcher from Outlook.com End */
+
+</style>
+
+<!--[if gte mso 9]>
+	<style type="text/css">
+		.hideFromOutlook {visibility:hidden !important;}
+		.hideFromOutlook {display:none !important;}
+	</style>
+<![endif]-->
+
+
+</head>
+
+<body style="margin:0;">
+
+<!-- Buttons -->
+
+<!--[if (gte mso 9)|(IE)]>
+	<table class="hideFromOutlook" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td>
+<![endif]-->
+
+<!-- Standard Layout -->
+	<input style="position:absolute; visibility:hidden; display:none !important;" id="standard-layout" class="standard-layout" type="radio" name="layout" checked>
+	<label for="standard-layout" class="layout-buttons"></label>
+<!-- Standard Layout End -->
+<!-- Large Layout -->
+	<input style="position:absolute; visibility:hidden; display:none !important;" id="large-layout" class="large-layout" type="radio" name="layout">
+	<label for="large-layout" class="layout-buttons"></label>
+<!-- Large Layout End -->
+<!-- Contrast Layout -->
+	<input style="position:absolute; visibility:hidden; display:none !important;" id="contrast-layout" class="contrast-layout" type="radio" name="layout">
+	<label for="contrast-layout" class="layout-buttons"></label>
+<!-- Contrast Layout End -->
+
+<!--[if (gte mso 9)|(IE)]>
+			</td>
+		</tr>
+	</table>
+<![endif]-->
+
+<!-- Buttons End -->
+
+<div class="main-wrapper">
+<!-- Wrapper -->
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td>
+<!--[if (gte mso 9)|(IE)]>
+	<table width="600px" align="center" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td>
+<![endif]-->
+			<table class="mainContent" width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td>
+						<table class="emailWidth" width="600" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>
+<!-- Preheader -->
+									<span class="preHeader" style="font-family:'Courier New', Courier, monospace; font-size:10px; line-height:15px; padding:0 0 50px 0;">Developing HTML emails to be more accessible.</span>
+<!-- Preheader End -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="preHeader" width="100%" height="30" style="font-family:'Courier New', Courier, monospace; font-size:10px; line-height:15px; margin:0;"><webversion style="color:#ee0000;">View the accessibility style switcher</webversion></td>
+										</tr>
+										<tr>
+											<td width="100%">
+												<h1 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:110px; line-height:130px; mso-line-height-rule:exactly; text-align:left; color:#ee0000; padding:10px 0 20px 0; margin:0;"><strong>Type E:</strong></h1><hr class="horizontalRule" size="1"><br>
+												<h2 class="issue" style="font-family:'Courier New', Courier, monospace; font-size:14px; line-height:25px; mso-line-height-rule:exactly; font-weight:lighter; color:#282828; margin:0; padding:0;">04. The Accessibility Issue</h2>
+											</td>
+										</tr>
+									</table>
+<!-- 30px Paragraph Space -->
+	<div style="display:block; height:30px; font-size:30px; line-height:30px;">&nbsp;</div>
+<!-- 30px Paragraph Space End -->
+<!-- Hero Image -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="columnWrap" width="100%" valign="top">
+												<table class="tableImageResize" width="600" style="background-color:#003f87;" bgcolor="#003f87" cellpadding="0" cellspacing="0" border="0">
+													<tr>
+														<td class="tdImageResize" width="600" valign="top"><img class="imgImageResize" src="http://www.beyondtheenvelope.co.uk/TypeE/images/Press_to_Open.png" width="600px" height="380px" alt="Wheelchair accessibility button." title="Wheelchair accessibility button." style="font-family:Courier, monospace; font-size:20px; line-height:30px; color:#ffffff; text-decoration:none; display:block; border:0; outline:none;"></td>
+													</tr>
+													<tr>
+														<td style="background:-webkit-linear-gradient(##195eac, #003f87); background:-moz-linear-gradient(##195eac, #003f87); background:linear-gradient(##195eac, #003f87);">
+															<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
+																<tr>
+																	<td class="legend" style="font-family:Courier, monospace; font-size:18px; line-height:100%; color:#ffffff; padding:15px 20px 15px 20px;">&#9855; <span style="font-size:14px;">Friendly.</span></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+<!-- Hero Image End -->
+<!-- Introduction -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color:#666666;">
+<!-- 30px Paragraph Space -->
+	<div style="display:block; height:30px; font-size:30px; line-height:30px;">&nbsp;</div>
+<!-- 30px Paragraph Space End -->
+												<p style="margin:0;">It&rsquo;s extremely rare that an email&rsquo;s designed with accessibility in mind. As email designers and developers, we often assume that the techniques we&rsquo;re forced to employ to ensure our emails render consistently across as many email and webmail clients as possible are incompatible with accessibility. It&rsquo;s possible, however, to develop emails with a level of accessibility, using HTML typography. In this issue, I&rsquo;ll look at four ways of implementing it.</p>
+<!-- 30px Paragraph Space -->
+	<div style="display:block; height:30px; font-size:30px; line-height:30px;">&nbsp;</div>
+<!-- 30px Paragraph Space End -->
+											</td>
+										</tr>
+									</table>
+<!-- Introduction End -->
+<!-- Section Header -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionHead" width="100%" style="padding:20px; border:1px solid #666666; border-bottom:1px dotted;"><h3 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:17px; line-height:25px; mso-line-height-rule:exactly; font-weight:normal; color:#666666; margin:0;">1. Use semantic tags.</h3></td>
+										</tr>
+									</table>
+<!-- Section Header End -->
+<!-- Section Body -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionBody" width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color:#666666; padding:20px 20px 20px 20px; border:1px solid #666666; border-top:0; border-bottom:double;">
+												<p style="margin:0;">Semantic tags (<span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">&lt;h1&gt;</span>, <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">&lt;h2&gt;</span>, <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">&lt;h3&gt;</span> and <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">&lt;p&gt;</span> etc.) help subscribers using screen reading software, such as <a class="textLink" href="http://www.freedomscientific.com/Products/Blindness/JAWS" target="_blank" style="color:#003f87;">JAWS</a> and <a class="textLink" href="http://www.apple.com/uk/accessibility/osx/voiceover" target="_blank" style="color:#003f87;">VoiceOver</a>, distinguish headings, and different levels of heading from paragraphs of text.</p>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+<!-- Code Example -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="codeText" width="100%" style="font-family:Courier, monospace; font-size:17px; color:#ee0000; padding:15px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background-color:#ffe5e5;" bgcolor="#ffe5e5">
+												<span class="codeText" style="font-family:Courier, monospace; font-size:14px; color:#666666; padding:0 0 1px 0; border-bottom:1px dotted #666666;">Semantic heading and paragraph</span>
+<!-- 15px Paragraph Space -->
+	<div style="display:block; height:15px; font-size:15px; line-height:15px;">&nbsp;</div>
+<!-- 15px Paragraph Space End -->
+												&lt;h1&gt;Heading&lt;/h1&gt;
+<!-- 10px Paragraph Space -->
+	<div style="display:block; height:10px; font-size:10px; line-height:10px;">&nbsp;</div>
+<!-- 10px Paragraph Space End -->
+												&lt;p&gt;Paragraph of text.&lt;/p&gt;
+											</td>
+										</tr>
+									</table>
+<!-- Code Example End -->
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+												<h4 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:25px; mso-line-height-rule:exactly; font-weight:normal; text-align:left; color:#666666; margin:0;"><em>Styling semantic headings</em></h4>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+												<p style="margin:0;">On headings, apply their styling inside each opening <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">&lt;h&gt;</span> tag. Add <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">mso-line-height-rule:exactly;</span> to maintain the line-height on Microsoft Outlook, and <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">margin:0;</span> to reset the margin.</p>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="codeText" width="100%" style="font-family:Courier, monospace; font-size:17px; color:#ee0000; padding:15px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background-color:#ffe5e5;" bgcolor="#ffe5e5">
+												&lt;h1 style="font-family:Arial, sans-serif; font-size:40px; line-height:45px; mso-line-height-rule:exactly; color:#ee0000; margin:0;"&gt;Heading&lt;/h1&gt;
+											</td>
+										</tr>
+									</table>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+												<h4 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:25px; mso-line-height-rule:exactly; font-weight:normal; text-align:left; color:#666666; margin:0;"><em>Styling semantic paragraphs</em></h4>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+												<p style="margin:0;">On paragraphs, first apply their styling inside the opening <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">&lt;td&gt;</span> tag of the table cell that contains them, as follows:</p>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="codeText" width="100%" style="font-family:Courier, monospace; font-size:17px; color:#ee0000; padding:15px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background-color:#ffe5e5;" bgcolor="#ffe5e5">
+												&lt;td style="font-family:Arial, sans-serif; font-size:14px; line-height:21px; color:#666666;"&gt;
+											</td>
+										</tr>
+									</table>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+												<p style="margin:0;">Then apply a style of <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">margin:0;</span> inside each opening <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">&lt;p&gt;</span> tag.</p>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="codeText" width="100%" style="font-family:Courier, monospace; font-size:17px; color:#ee0000; padding:15px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background-color:#ffe5e5;" bgcolor="#ffe5e5">
+												&lt;p style="margin:0;"&gt;
+											</td>
+										</tr>
+									</table>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+<!-- Box Out -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="boxOut" width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color:#666666; padding:15px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; border:1px solid #6699ff; background-image:url(http://www.beyondtheenvelope.co.uk/TypeE/images/Grid.png); background-color:f7faff;" bgcolor="#f7faff"><h4 class="codeText" style="font-family:Courier, monospace; mso-line-height-rule:exactly; font-weight:normal; color:#ee0000; padding:0 0 1px 0; border-bottom:1px dotted #ee0000; margin:0;">Troublesome Tags</h4>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+												<p style="margin:0;">While semantic tags provide a greater understanding of the hierarchy of an emails content, they&rsquo;re often avoided, as some email and webmail clients apply their own styling to these elements, resulting in poor rendering</p>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+												<p style="margin:0;"><span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">margin</span> is one particular style that tends to be applied to semantic tags, resulting in bloated spacing, particularly around headings. The way to fix this is to reset the style by applying <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">margin:0;</span> inside the opening tag.</p>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+											</td>
+										</tr>
+									</table>
+<!-- Box Out End -->
+											</td>
+										</tr>
+									</table>
+<!-- Section Body End -->
+<!-- 40px Paragraph Space -->
+	<div style="display:block; height:40px; font-size:40px; line-height:40px;">&nbsp;</div>
+<!-- 40px Paragraph Space End -->
+<!-- Section Header -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionHead" width="100%" style="padding:20px; border:1px solid #666666; border-bottom:1px dotted;"><h3 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:17px; line-height:25px; mso-line-height-rule:exactly; font-weight:normal; color:#666666; margin:0;">2. Style paragraphs with a <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">font-size</span> of 14px.</h3></td>
+										</tr>
+									</table>
+<!-- Section Header End -->
+<!-- Section Body -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionBody" width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color:#666666; padding:20px 20px 20px 20px; border:1px solid #666666; border-top:0; border-bottom:double;">
+												<p style="margin:0;">Style paragraphs with a <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">font-size</span> of 14px, and as a guide, style <span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">line-height</span> at one and a half times the font size, depending on the font. Fonts with a smaller x-height won’t require as much line-height, as there&rsquo;s already more relative space between the x-height and the cap height, and conversely, fonts with a larger x-height may require more. You can also use the percent unit for line-height (<span class="codeText" style="font-family:Courier, monospace; color:#ee0000;">line-height:150%;</span> for example) though you&rsquo;ll see some rendering inconsistencies on Microsoft Outlook.</p>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+<!-- Code Example -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="codeText" width="100%" style="font-family:Courier, monospace; font-size:17px; color:#ee0000; padding:15px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background-color:#ffe5e5;" bgcolor="#ffe5e5">
+												&lt;p style="font-family:Arial, sans-serif; font-size:14px; line-height:21px; color:#000000;"&gt;14px paragraph of text.&lt;/p&gt;
+											</td>
+										</tr>
+									</table>
+<!-- Code Example End -->
+											</td>
+										</tr>
+									</table>
+<!-- 40px Paragraph Space -->
+	<div style="display:block; height:40px; font-size:40px; line-height:40px;">&nbsp;</div>
+<!-- 40px Paragraph Space End -->
+<!-- Type Anatomy -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionHead" width="100%" style="padding:0;"><h5 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:17px; line-height:25px; mso-line-height-rule:exactly; font-weight:normal; color:#ff0000; margin:0;"><strong>Type Anatomy</strong></h5></td>
+										</tr>
+									</table>
+<!-- Type Anatomy End -->
+<!-- 10px Paragraph Space -->
+	<div style="display:block; height:10px; font-size:10px; line-height:10px;">&nbsp;</div>
+<!-- 10px Paragraph Space End -->
+<!-- Lower Case 'X' and 'L' -->
+									<table width="100%" style="border:1px solid #666666; border-collapse:collapse;" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="columnWrap" width="100%" valign="top">
+												<table class="tableImageResize" width="298" align="left" bgcolor="#ff0000" cellpadding="0" cellspacing="0" border="0">
+													<tr>
+														<td class="tdImageResize" width="298" height="298" style="background-color:#ff0000;" bgcolor="#ff0000"><img class="imgImageResize" src="http://www.beyondtheenvelope.co.uk/TypeE/images/X_Height.png" width="298px" height="298px" alt="x height" title="x height" style="font-family:Courier, monospace; color:#000001; font-size:20px; line-height:130%; text-decoration:none; display:block; border:0; outline:none;"></td>
+													</tr>
+												</table>
+<!--[if (gte mso 9)|(IE)]>
+	<table width="273px" align="left" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td>
+<![endif]-->
+												<table class="col273" align="left" cellpadding="0" cellspacing="0" border="0">
+													<tr>
+														<td width="100%" style="padding-top:10px;">
+															<table class="col273" align="left" cellpadding="0" cellspacing="0" border="0">
+																<tr>
+																	<td style="padding:20px 20px 20px 40px;"><h3 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:17px; line-height:25px; font-weight:normal; color:#666666; margin:0;">x-height &amp; cap height</h3><ol class="typeFile" style="font-family:Georgia, Times, 'Times New Roman', serif; font-size:18px; line-height:130%; color:#ff0000;"><li><em>x-height</em></li><li><em>Cap height</em></li></ol></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+<!--[if (gte mso 9)|(IE)]>
+			<td>
+		<tr>
+	</table>
+<![endif]-->
+											</td>
+										</tr>
+									</table>
+<!-- Lower Case 'X' and 'L' End -->
+<!-- 40px Paragraph Space -->
+	<div style="display:block; height:40px; font-size:40px; line-height:40px;">&nbsp;</div>
+<!-- 40px Paragraph Space End -->
+<!-- Section Header -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionHead" width="100%" style="padding:20px; border:1px solid #666666; border-bottom:1px dotted;"><h3 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:17px; line-height:25px; mso-line-height-rule:exactly; font-weight:normal; color:#666666; margin:0;">3. Align body text left (even on mobile).</h3></td>
+										</tr>
+									</table>
+<!-- Section Header End -->
+<!-- Section Body -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionBody" width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color:#666666; padding:20px 20px 20px 20px; border:1px solid #666666; border-top:0; border-bottom:double;">
+												<p style="margin:0;">Paragraphs of text are much easier to read when they&rsquo;re aligned left, as the eye has a reference point to start reading each new line. There&rsquo;s a tendency to centre paragraphs of text on mobile, and while this is acceptable on headings and buttons, it&rsquo;s difficult to read on other types of text.</p>
+											</td>
+										</tr>
+									</table>
+<!-- 40px Paragraph Space -->
+	<div style="display:block; height:40px; font-size:40px; line-height:40px;">&nbsp;</div>
+<!-- 40px Paragraph Space End -->
+<!-- Section Header -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionHead" width="100%" style="padding:20px; border:1px solid #666666; border-bottom:1px dotted;"><h3 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:17px; line-height:25px; mso-line-height-rule:exactly; font-weight:normal; color:#666666; margin:0;">4. Check your colour contrast ratio.</h3></td>
+										</tr>
+									</table>
+<!-- Section Header End -->
+<!-- Section Body -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="sectionBody" width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color:#666666; padding:20px 20px 20px 20px; border:1px solid #666666; border-top:0; border-bottom:double;">
+												<p style="margin:0;">Check the contrast ratio of your text and background colours using a <a class="textLink" href="http://webaim.org/resources/contrastchecker" target="_blank" style="color:#003f87;">colour contrast tool</a>. Some colours, white on yellow for instance, might be obvious no, no&rsquo;s, but some colour combinations have more subtle contrast issues.</p>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+<!-- Box Out -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="boxOut" width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color:#666666; padding:15px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; border:1px solid #6699ff; background-image:url(http://www.beyondtheenvelope.co.uk/TypeE/images/Grid.png); background-color:f7faff;" bgcolor="#f7faff"><h4 class="codeText" style="font-family:Courier, monospace; mso-line-height-rule:exactly; font-weight:normal; color:#ee0000; padding:0 0 1px 0; border-bottom:1px dotted #ee0000; margin:0;">Testing for Colour Contrast</h4>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="tdImageResize"><a href="http://www.webaim.org" target="_blank"><img class="imgImageResize" src="http://www.beyondtheenvelope.co.uk/TypeE/images/WebAim_Logo.png" width="287px" height="76px" alt="WebAIM Logo." title="WebAIM Logo." style="display:block; border:0; outline:none;"></a></td>
+										</tr>
+									</table>
+
+
+
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+
+															<p style="margin:0;"><a class="textLink" href="http://webaim.org/resources/contrastchecker" target="_blank" style="color:#003f87;">webaim.org</a> features a really useful colour contrast tool, amongst a host of other resources on all things accessible. Of particular use to email designers and developers are the:</p>
+															<ul style="text-align:left; padding-left:15px;">
+																<li><a class="textLink" href="http://webaim.org/resources/contrastchecker" target="_blank" style="color:#666666;">Colour contrast tool</a></li>
+																<li><a class="textLink" href="http://webaim.org/standards/wcag/checklist" target="_blank" style="color:#666666;">Paraphrased list of the Web Content Accessibility Guidelines</a></li>
+																<li><a class="textLink" href="http://wave.webaim.org/toolbar" target="_blank" style="color:#666666;">Accessibility testing tool (Wave Toolbar)</a></li>
+															</ul>
+														</td>
+													</tr>
+												</table>
+<!-- Box Out End -->
+											</td>
+										</tr>
+									</table>
+<!-- Conclusion -->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color:#666666;">
+<!-- 30px Paragraph Space -->
+	<div style="display:block; height:30px; font-size:30px; line-height:30px;">&nbsp;</div>
+<!-- 30px Paragraph Space End -->
+												<p style="margin:0;">Of course, you can go much further with making your emails more accessible. How far you go very much depends on your audience. It&rsquo;s important to remember, that any effort to make your emails more accessible will benefit <strong>all</strong> your subscribers, and that&rsquo;s got to be a good thing!</p>
+<!-- 30px Paragraph Space -->
+	<div style="display:block; height:30px; font-size:30px; line-height:30px;">&nbsp;</div>
+<!-- 30px Paragraph Space End -->
+											</td>
+										</tr>
+									</table>
+<!-- Conclusion End -->
+						<table class="emailWidth" width="100%" style="-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background-color:#003f87;" bgcolor="#003f87" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>
+									<table class="colophon" style="background:-webkit-linear-gradient(#195eac, #003f87); background:-moz-linear-gradient(#195eac, #003f87); background:linear-gradient(#195eac, #003f87); -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td class="colophon" style="font-family:'Courier New', Courier, monospace; font-size:12px; line-height:18px; color:#ffffff; padding:20px 15px 20px 15px; -webkit-text-size-adjust:none;">
+												<strong>Type E:</strong> is an email newsletter devoted to typography on email, created by Email Designer and Developer, Paul Airy. Please email your thoughts, suggestions and questions to <a href="mailto:type-e@beyondtheenvelope.co.uk?subject=Type E:" style="color:#ffffff;">type-e@beyondtheenvelope.co.uk</a>. Thank you for subscribing!
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+<!-- 20px Paragraph Space -->
+	<div style="display:block; height:20px; font-size:20px; line-height:20px;">&nbsp;</div>
+<!-- 20px Paragraph Space End -->
+<!-- Footer -->
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="600" style="padding-bottom:20px;">
+									<hr class="horizontalRule" size="1"><span class="beyondTheEnvelope" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:20px; text-align:left; color:#ee0000;"><strong>Beyond the Envelope&trade;</strong></span><br><span class="footer" style="font-family:'Courier New', Courier, monospace; font-size:10px; line-height:15px; color:#282828;">&copy; Paul Airy, 2015<br><span class="appleBlueLinks">+44 (0) 7962 177 477</span> (International)<br><span class="appleBlueLinks">07962 177 477</span> (UK)<br>@Paul_Airy</span></td>
+							</tr>
+							<tr>
+								<td width="100%" style="padding-bottom:20px;"><span class="unsubscribe" style="font-family:'Courier New', Courier, monospace; font-size:10px; line-height:15px;"><unsubscribe style="color:#ee0000;">Unsubscribe</unsubscribe>:<br><span class="emoticon" style="font-size:20px; line-height:25px; color:#282828;"></span> Please don&rsquo;t make me cry! :(</span></td>
+							</tr>
+						</table>
+<!-- Footer End -->
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+<!--[if (gte mso 9)|(IE)]>
+			</td>
+		</tr>
+	</table>
+<![endif]-->
+		</td>
+	</tr>
+</table>
+<!-- Wrapper End -->
+</div>
+</body>
+</html>

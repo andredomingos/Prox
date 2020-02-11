@@ -1,0 +1,1355 @@
+
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+lang="en" xml:lang="en">
+<head>
+<title>Litmus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+/* BOILERPLATE STYLES */
+#outlook a{padding:0;}
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+.ExternalClass, .ExternalClass span, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+a {text-decoration: none;}
+body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+img {-ms-interpolation-mode:bicubic; display: block; height:auto; border:0; line-height:100%; outline:none; text-decoration:none;}
+body {height:100% !important; margin:0 !important; padding:0 !important; width:100% !important;}
+.appleFooter a { color:#08223E!important; text-decoration: none!important; }
+.appleWhite a { color:#ffffff!important; text-decoration: none!important; }
+.appleText a { color:#08223e!important; text-decoration: none!important; }
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+         url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+         url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    mso-font-alt: 'Arial';
+}
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+    src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+         url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+         url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    mso-font-alt: 'Arial';
+}
+
+@media only screen and (max-width: 640px) {
+	.showme{ display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important;}
+	.hideme {  display:none; display:none !important;}
+	.blockwrap { display:block !important; }
+  .w100p { width: 100% !important; }
+  .h15 { height: 15px !important; }
+  .hauto { height: auto !important; }
+	.img-max, .switchtabs {
+		max-width: 100% !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+  .text-center { text-align: center !important; }
+}
+.link:hover { text-decoration:none !important; }
+.cta-border:hover { border-bottom: 1px solid transparent !important; }
+.fadeimg {
+  transition: 0.3s!important;
+  opacity: 1!important;
+}
+.fadeimg:hover {
+  transition: 0.3s!important;
+  opacity: 0.5!important;
+}
+.cta, .bg-yt, .bg-yellow { transition: 0.3s !important; }
+.bg-yt:hover {
+  transition: 0.3s!important;
+  background-color: rgba(255,255,255,0.7)!important;
+}
+.bg-yellow:hover {
+  transition: 0.3s!important;
+  background-color: #F6C6A4 !important;
+}
+.btn-yt:hover {
+  transition: 0.3s !important;
+  background-color: rgba(255,255,255,0.7)!important;
+  border: 1px solid transparent !important;
+  mso-border-alt: 8px solid rgba(255,255,255,0.7)!important;
+  box-shadow: none !important;
+}
+.btn-yellow:hover {
+  transition: 0.3s !important;
+  background-color: #F6C6A4 !important;
+  border: 1px solid #F6C6A4 !important;
+  mso-border-alt: 8px solid #F6C6A4 !important;
+  color: #08223e !important;
+  box-shadow: none !important;
+}
+.btn-teal:hover {
+  transition: 0.3s !important;
+  background-color: #7CCEC6 !important;
+  border: 1px solid #7CCEC6 !important;
+  mso-border-alt: 8px solid #7CCEC6 !important;
+  color: #08223e !important;
+  box-shadow: none !important;
+}
+.btn-blue:hover {
+  transition: 0.3s !important;
+  background-color: #7ACEE8 !important;
+  border: 1px solid #7ACEE8 !important;
+  mso-border-alt: 8px solid #7ACEE8 !important;
+  color: #08223e !important;
+  box-shadow: none !important;
+}
+.btn-purple:hover {
+  transition: 0.3s !important;
+  background-color: #B6A0C9 !important;
+  border: 1px solid #B6A0C9 !important;
+  mso-border-alt: 8px solid #B6A0C9 !important;
+  color: #08223e !important;
+  box-shadow: none !important;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/switcher.css" />
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<meta name="robots" content="noindex, nofollow" /></head>
+<body class="body" style="padding:0; margin:0; text-align:center; background-color: #5C9BE1;">
+<table aria-label="Email from Litmus" border="0" cellpadding="0" cellspacing="0" lang="en" role="article" style="width: 100%; text-align:center; margin: 0 auto; table-layout: fixed;">
+	<tbody>
+		<tr>
+			<td bgcolor="#5C9BE1" class=""><!-- start HIDDEN_PREVIEW_TEXT --><!--[if !mso]><! -->
+			<div style="display:none !important; display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;">See for yourself. Plus, learn how to write accessible email, go off-grid with this email design trend, download our latest report, and more.
+‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;</div>
+			<!--<![endif]--><!-- end HIDDEN_PREVIEW_TEXT --><!-- start HEADER_SECTION -->
+
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+				<tbody>
+					<tr>
+						<td align="center" bgcolor="#08223E" style="padding: 0px 20px;" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width:600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="left" class="w100p text-center" style="width:600px; max-width: 600px;" valign="middle"><!-- start HEADER_LOGO --><a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8cb/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8"><img alt="Litmus" height="50" src="https://campaigns.litmus.com/_email/_global/images/logo_icon-name-white.png" style="display:inline; color: #ffffff; font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-weight:bold; font-size:36px; line-height:40px; margin: 0 auto; padding: 0;" width="134"> </a> <!-- end HEADER_LOGO --></td>
+									<td align="right" class="hideme" valign="middle"><a class="link" href="https://pages.litmus.com/webmail/31032/690491523/fb8eba46a5c5e9f0bf36d4189832c07ec0e8f78bc0e062f58296049458f721eb" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: underline; white-space: nowrap;" target="_blank">View&nbsp;Online</a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- end HEADER_SECTION --><!-- start BODY -->
+
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+				<tbody>
+					<tr>
+						<td align="center" bgcolor="#5C9BE1" valign="top" class="">
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start MODULE_FALLBACK -->
+
+						<div class="staticfallback">
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" class="w100p switchhero" style="width: 600px; max-width: 600px; padding: 0 20px;">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8b8/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" height="225" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod1-switcher.gif" style="display: block; padding:0; margin:0; max-width: 100%;" width="225"> </a>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h1 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 36px; line-height: 44px; text-align: center; color: #08223E; font-weight: bold;">Flip the Switch for Higher Contrast or Larger&nbsp;Text</h1>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">An estimated 1.3 billion people live with a visual impairment, and it’s likely that some of your subscribers do, too. Use an accessibility switcher to see how increasing the font size or changing the color contrast can make your emails easier to read for a wider audience.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --> <a class="cta btn-yellow" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8b8/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#EA6C69;border-width:1px;border-style:solid;border-color:#EA6C69;mso-border-alt:8px solid #EA6C69;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank"> Build your own accessibility switcher&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<!-- end MODULE_FALLBACK --><!-- start SWITCHER --><!-- /* Accessibility Switcher™ – (c) Paul Airy 2019 – Used with permission */ -->
+
+						<div class="switchinputs"><!--[if (!mso)&(gte IE 10)]> <!-- --><input checked="checked" class="standard-layout" id="standard-layout" name="layout" style="position:absolute;visibility:hidden;display:none;" type="radio"> <input class="large-layout" id="large-layout" name="layout" style="position:absolute;visibility:hidden;display:none;" type="radio"> <input class="contrast-layout" id="contrast-layout" name="layout" style="position:absolute;visibility:hidden;display:none;" type="radio"> <!--<![endif]-->
+						<div class="main-wrapper"><!-- start MODULE_00 --><!--[if (!mso)&(gte IE 10)]> <!-- -->
+						<div class="checkswitcher" style="display:none; max-height:0; mso-hide:all;">
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" class="w100p switchhero" style="width: 600px; max-width: 600px; padding: 0 20px;">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td align="right" style="width: 400px; max-width: 400px;" class="">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<img alt="Click to switch between modes" border="0" height="50" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod1_text_above.png" style="display: block; padding:0; margin:0; max-width: 100%; font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #ffffff; text-align: right;" width="202"></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" class="w100p switchhero" style="width: 600px; max-width: 600px; padding: 0 20px;">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start SWITCH_TABS --><!--[if !mso]><! -->
+
+									<div class="switchtabs" style="width: 500px; max-width: 500px;"><label class="layout-buttons settings-box-element" for="standard-layout"><span class="label-text">S<br>
+									<span class="switch-type">Standard</span> </span> </label> <label class="layout-buttons settings-box-element" for="large-layout"> <span class="label-text">L<br>
+									<span class="switch-type">Large Text</span> </span> </label> <label class="layout-buttons settings-box-element" for="contrast-layout"> <span class="label-text">C<br>
+									<span class="switch-type">Contrast</span> </span> </label></div>
+									<!--<![endif]--><!-- end SWITCH_TABS -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 36px; line-height: 44px; text-align: center; color: #08223E; font-weight: bold;">Flip the Switch for Higher Contrast or Larger&nbsp;Text</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">An estimated 1.3 billion people live with a visual impairment, and it’s likely that some of your subscribers do, too. Use an accessibility switcher—just like the one in this newsletter—to see how increasing the font size or changing the color contrast can make your emails easier to read for a wider audience.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-yellow" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8b8/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#EA6C69;border-width:1px;border-style:solid;border-color:#EA6C69;mso-border-alt:8px solid #EA6C69;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank">Build your own accessibility switcher&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<!--<![endif]--><!-- end MODULE_00 --><!-- start MODULE_01 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#ffffff" class="w100p switchtable" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#EEB35B" style="width: 100%;" class="">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bb/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod2_litmus_accessibility_checker.png" style="display: block; padding:0; margin:0; max-width: 100%;" width="288"> </a>
+
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start EYEBROW -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td align="right" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">•&nbsp;</p>
+												</td>
+												<td align="center" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">NEW IN LITMUS</p>
+												</td>
+												<td align="left" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">&nbsp;•</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- end EYEBROW -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #08223E; font-weight: bold;">Make Email for Everyone</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">See (and hear!) how accessible your emails are with the new accessibility checks in Litmus Checklist. Hear how your emails sound when read out loud by screen readers and test your campaign against key accessibility best practices to ensure a great experience for every subscriber.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-yellow" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bb/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#EEB35B;border-width:1px;border-style:solid;border-color:#EEB35B;mso-border-alt:8px solid #EEB35B;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank">Create accessible emails with Litmus&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end MODULE_01 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start MODULE_02 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#ffffff" class="w100p switchtable" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#63BFA2" style="width: 100%;" class="">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bd/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod3_accessibility_videos.png" style="display: block; padding:0; margin:0; max-width: 100%;" width="278"> </a>
+
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 5px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #08223E; font-weight: bold;">Accessibility Tips from the&nbsp;Pros</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">Catch up on the most popular Litmus Live sessions on email accessibility and learn how some of the world’s best email marketers make their emails accessible to <i>all</i> of their subscribers.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-teal" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bd/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#63BFA2;border-width:1px;border-style:solid;border-color:#63BFA2;mso-border-alt:8px solid #63BFA2;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank">Watch the sessions&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end MODULE_02 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start MODULE_03 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#ffffff" class="w100p switchtable" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#EA7165" style="width: 100%;" class="">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bg/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod4_accessible_copywriting.png" style="display: block; padding:0; margin:0; max-width: 100%;" width="300"> </a>
+
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #08223E; font-weight: bold;">How to Write More Accessible Email&nbsp;Copy</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">Ensuring your copy is readable and easy to understand goes a long way in making your campaigns more accessible. Use these easy-to-follow copywriting tricks and write email copy for&nbsp;everyone.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-yellow" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bg/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#EA7165;border-width:1px;border-style:solid;border-color:#EA7165;mso-border-alt:8px solid #EA7165;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank">Write better copy&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end MODULE_03 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start MODULE_04 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#ffffff" class="w100p switchtable" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#6E65D7" style="width: 100%;" class="">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bj/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod5_engagement_report.png" style="display: block; padding:0; margin:0; max-width: 100%;" width="230"> </a></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start EYEBROW -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td align="right" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">•&nbsp;</p>
+												</td>
+												<td align="center" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">FREE REPORT</p>
+												</td>
+												<td align="left" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">&nbsp;•</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- end EYEBROW -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #08223E; font-weight: bold;">The State of Email Engagement</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">Email read times have gone up. Morning hours are the best time to send email. iOS Mail is no longer the most popular email client. Surprised? Discover everything we learned when analyzing billions of email opens tracked with Litmus Email Analytics.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-purple" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bj/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#6E65D7;border-width:1px;border-style:solid;border-color:#6E65D7;mso-border-alt:8px solid #6E65D7;font-size:18px;color:#ffffff;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank">Show me the stats&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end MODULE_04 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start MODULE_05 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#ffffff" class="w100p switchtable" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#3B4656" style="width: 100%;" class="">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bl/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod6_litmus_live_london.png" style="display: block; padding:0; margin:0; max-width: 100%;" width="274"> </a>
+
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start EYEBROW -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td align="right" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">•&nbsp;</p>
+												</td>
+												<td align="center" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">LITMUS LIVE</p>
+												</td>
+												<td align="left" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #08223E; margin:0; padding:0;">&nbsp;•</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- end EYEBROW -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #08223E; font-weight: bold;">Will we see you at Litmus Live&nbsp;London?</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">Just a little over a month until we bring Europe’s smartest email professionals together for Litmus Live London. Join us to get real-world advice from marketers who’ve truly mastered the art of email—and bring your email strategy, design, and development to the next&nbsp;level.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-yellow" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bl/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#EEB35B;border-width:1px;border-style:solid;border-color:#EEB35B;mso-border-alt:8px solid #EEB35B;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank">Get your ticket&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">Or see what’s on the agenda for <a class="link" href="https://pages.litmus.com/e/31032/dynamic-content-1456url-agenda/j1v8bn/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="color: #0088cc; text-decoration: underline; font-weight:bold;" target="_blank">Boston</a> and <a class="link" href="https://pages.litmus.com/e/31032/dynamic-content-1456url-agenda/j1v8bq/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="color: #0088cc; text-decoration: underline; font-weight:bold;" target="_blank">San Francisco</a>.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end MODULE_05 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start MODULE_06 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#ffffff" class="w100p switchtable" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#63BFA2" style="width: 100%;" class=""><a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bs/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod7_off_grid_design.png" style="display: block; padding:0; margin:0; max-width: 100%;" width="296"> </a></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #08223E; font-weight: bold;">Trending in Email Design: Going Off‑Grid</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">Broken grids, overlapping elements, and abstract design are among the hottest email design trends. See how Boden, Pizza Express, J.Crew, and other top brands let their emails break free from rigid grid layouts to create truly unique email&nbsp;experiences.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-teal" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bs/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#63BFA2;border-width:1px;border-style:solid;border-color:#63BFA2;mso-border-alt:8px solid #63BFA2;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank">Follow us off the grid&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end MODULE_06 -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start PODCAST_DELIVERING -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#ffffff" class="w100p switchtable" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 50px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8cd/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" height="108" src="https://campaigns.litmus.com/_email/2019/06_jun/20190619_June-NL/images/mod07_delivering_podcast.png" style="display: block; padding:0; margin:0; max-width: 100%;" width="186"> </a>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 50px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #08223E; font-weight: bold;">Delivering: A Podcast by&nbsp;Litmus</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">Tune in for <i>Delivering</i>, the podcast that looks at the email industry as a whole, from strategy and copywriting to design, development, trends, and&nbsp;more.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; font-weight:bold; color: #08223E;">Catch up with the latest episodes:</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+										<tbody>
+											<tr>
+												<td align="left" bgcolor="#FFE3AC" class="bg-yellow" style="width: 100%; padding: 0 20px;">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bv/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="display:block; font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; font-weight:bold; color: #08223E; text-decoration: underline;" target="_blank">What is email design really?&nbsp;→ </a>
+
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+										<tbody>
+											<tr>
+												<td align="left" bgcolor="#FFE3AC" class="bg-yellow" style="width: 100%; padding: 0 20px;">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												<a href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8bx/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="display:block; font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; font-weight:bold; color: #08223E; text-decoration: underline;" target="_blank">What We Saw at Salesforce Connections&nbsp;→ </a>
+
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+													<tbody>
+														<tr>
+															<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #08223E;">Subscribe to the <i>Delivering</i> podcast on <a class="link" href="https://pages.litmus.com/e/31032/podcast-by-litmus-id1460390478/j1v8bz/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="color: #0088cc; font-weight:bold; text-decoration: underline;" target="_blank">iTunes</a> or <a class="link" href="https://pages.litmus.com/e/31032/show-2q8bw6NukDWLpr7JXbBkAC/j1v8c2/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="color: #0088cc; font-weight:bold; text-decoration: underline;" target="_blank">Spotify</a> and never miss a single&nbsp;episode.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end PODCAST_DELIVERING -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start SIGNUP_DEMO -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#ffffff" class="w100p switchtable" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="https://pages.litmus.com/e/31032/rt-7649069693970963971/j1v8c4/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" class="fadeimg" height="80" src="https://campaigns.litmus.com/_email/2019/03_mar/20190315_March-NL/images/litmus_logo_wheel.png" style="display: block; padding:0; margin:0; max-width: 100%;" width="80"> </a>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #33373E; font-weight: bold;">Sign Up for a Free Litmus&nbsp;Demo</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #33373E;">New to Litmus, curious, or just need a quick refresher on how Litmus can improve your email creation process? Join our customer support team for a walk-through of the Litmus Email Creative&nbsp;Platform.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 30px; text-align: center; font-weight:bold; color: #0088cc;"><a class="link" href="https://pages.litmus.com/e/31032/rt-7649069693970963971/j1v8c4/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="color: #0088cc; text-decoration: underline;" target="_blank">Thursday, July 18th, 2pm&nbsp;ET</a><br>
+									<a class="link" href="https://pages.litmus.com/e/31032/rt-7649069693970963971/j1v8c4/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="color: #0088cc; text-decoration: underline;" target="_blank">Wednesday, July 26th, 11am&nbsp;ET</a><br>
+									<a class="link" href="https://pages.litmus.com/e/31032/rt-7649069693970963971/j1v8c4/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="color: #0088cc; text-decoration: underline;" target="_blank">Thursday, August 1st, 2pm&nbsp;ET</a><br>
+									<a class="link" href="https://pages.litmus.com/e/31032/rt-7649069693970963971/j1v8c4/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" style="color: #0088cc; text-decoration: underline;" target="_blank">Wednesday, August 7th, 11am&nbsp;ET</a></p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --> <a class="cta btn-yellow" href="https://pages.litmus.com/e/31032/rt-7649069693970963971/j1v8c4/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#F4B45D;border-width:1px;border-style:solid;border-color:#F4B45D;mso-border-alt:8px solid #F4B45D;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank"> Register now&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end SIGNUP_DEMO -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start FACT_OF_THE_MONTH -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#2F343C" class="w100p switchhero" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start EYEBROW -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td align="right" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #ffffff; margin:0; padding:0;">•&nbsp;</p>
+												</td>
+												<td align="center" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #ffffff; margin:0; padding:0;">LITMUS FACT OF THE&nbsp;MONTH</p>
+												</td>
+												<td align="left" valign="middle" class="">
+												<p style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22px; font-weight:bold; color: #ffffff; margin:0; padding:0;">&nbsp;•</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- end EYEBROW -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" bgcolor="#6E65D7" class="w100p switchhero" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 24px; line-height: 32px; text-align: center; color: #ffffff; font-weight: bold;">The average time spent reading an email has increased by 21% over the last 2&nbsp;years.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 40px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table cellpadding="0" cellspacing="0" class="fadeimg" role="presentation">
+										<tbody>
+											<tr>
+												<th align="center" class="blockwrap" style="vertical-align:top;" valign="top"><a href="https://pages.litmus.com/e/31032/Hhe2G/j1v8c6/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="2016: 11.1 seconds" border="0" height="133" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod10_stat1.png" style="display: block; padding:0; margin:0; color: #ffffff; font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-weight:bold; font-size:16px; line-height:20px;" width="112"> </a></th>
+												<th class="blockwrap h15" style="font-size: 1px;" width="15">&nbsp;</th>
+												<th align="center" class="blockwrap" style="vertical-align:middle;" valign="middle"><img alt="" border="0" class="hideme" height="4" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod10_dot_horiz.png" style="display: block; padding:0; margin:0;" width="19"> <!-- start MOBILE_ONLY --> <!--[if !mso]><! -->
+												<div class="showme" style="display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;"><img alt="" border="0" height="19" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod10_dot_verti.png" style="display: block; padding:0; margin:0; color: #ffffff; font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-weight:bold; font-size:16px; line-height:20px;" width="4"></div>
+												<!--<![endif]--> <!-- end MOBILE_ONLY --></th>
+												<th class="blockwrap h15" style="font-size: 1px;" width="15">&nbsp;</th>
+												<th align="center" class="blockwrap" style="vertical-align:top;" valign="top"><a href="https://pages.litmus.com/e/31032/Hhe2G/j1v8c6/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="" border="0" height="149" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod10_clock_image.png" style="display: block; padding:0; margin:0;" width="148"> </a></th>
+												<th class="blockwrap h15" style="font-size: 1px;" width="15">&nbsp;</th>
+												<th align="center" class="blockwrap" style="vertical-align:middle;" valign="middle"><img alt="" border="0" class="hideme" height="4" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod10_dot_horiz.png" style="display: block; padding:0; margin:0;" width="19"> <!-- start MOBILE_ONLY --> <!--[if !mso]><! -->
+												<div class="showme" style="display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;"><img alt="" border="0" height="19" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod10_dot_verti.png" style="display: block; padding:0; margin:0; color: #ffffff; font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-weight:bold; font-size:16px; line-height:20px;" width="4"></div>
+												<!--<![endif]--> <!-- end MOBILE_ONLY --></th>
+												<th class="blockwrap h15" style="font-size: 1px;" width="15">&nbsp;</th>
+												<th align="center" class="blockwrap" style="vertical-align:top;" valign="top"><a href="https://pages.litmus.com/e/31032/Hhe2G/j1v8c6/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="2018: 13.4 seconds" border="0" height="133" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod10_stat2.png" style="display: block; padding:0; margin:0; color: #ffffff; font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-weight:bold; font-size:16px; line-height:20px;" width="112"> </a></th>
+											</tr>
+										</tbody>
+									</table>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-blue" href="https://pages.litmus.com/e/31032/Hhe2G/j1v8c6/690491523?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#60C1E3;border-width:1px;border-style:solid;border-color:#60C1E3;mso-border-alt:8px solid #60C1E3;font-size:18px;color:#08223e;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank"><img alt="" border="0" height="18" src="https://campaigns.litmus.com/_email/2019/07_jul/20190710_July-NL/images/mod10_twitter_bird.png" style="display: inline; padding:0; margin:0; vertical-align: -3px;" width="22">&nbsp;&nbsp;Tweet
+this&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end FACT_OF_THE_MONTH -->
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+							<tbody>
+								<tr>
+									<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- start LITMUS_WEEKLY -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px;">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#08223E" class="w100p switchhero" style="width: 600px; max-width: 600px; padding: 0 20px; box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 40px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<h2 style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 36px; text-align: center; color: #ffffff; font-weight: bold;">Want more email news in your&nbsp;inbox?</h2>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; margin: 0; font-size: 18px; line-height: 24px; text-align: left; color: #ffffff;">Get a weekly dose of Litmus and the latest email marketing news when you sign up for Litmus&nbsp;Weekly.</p>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- start CTA_BUTTON --><a class="cta btn-yt" href="https://pages.litmus.com/e/31032/ntent-0dynamic-content-1456url/j1v8cg/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" role="button" style="background-color:#ffffff;border-width:1px;border-style:solid;border-color:#ffffff;mso-border-alt:8px solid #ffffff;font-size:18px;color:#08223E;font-family:'proxima_nova', Helvetica, Arial, sans-serif;font-weight:bold;text-decoration:none;padding-top:15px;padding-bottom:15px;padding-right:30px;padding-left:30px;display:inline-block;mso-padding-alt:0px;box-shadow:0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);border-radius:50px !important;" target="_blank">Sign up now&nbsp;→ </a> <!-- end CTA_BUTTON -->
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end LITMUS_WEEKLY --><!-- start FOOTER_SECTION -->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="w100p" role="presentation" style="width: 600px; max-width: 600px; padding: 0 20px;">
+							<tbody>
+								<tr>
+									<td align="center" class="">
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="https://pages.litmus.com/e/31032/2019-07-11/j1v8cj/690491523/free?h=hi-GkNX344O5k6IwYBHtal7Uu40oqohyWFgjmDNIYy8" target="_blank"><img alt="Litmus" border="0" height="30" src="https://campaigns.litmus.com/_email/_global/images/logo_icon-navy.png" style="display:block; border:0px; color: #08223E; font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-weight:bold; font-size:27px; line-height:30px; margin: 0 auto; padding: 0;" width="30"> </a>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<span class="footer" style="font-family:'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px; color:#08223E;"> <span class="appleFooter"> 675 Massachusetts Ave.<br>
+									Cambridge, MA 02139, USA</span><br>
+									<a href="https://pages.litmus.com/webmail/31032/690491523/fb8eba46a5c5e9f0bf36d4189832c07ec0e8f78bc0e062f58296049458f721eb" style="color: #08223E; text-decoration: underline;" target="_blank">View online</a><br>
+									<br>
+									You’re receiving this email because you’ve signed up to receive updates from Litmus. If you’d prefer not to receive updates, you can <a href="https://pages.litmus.com/emailPreference/epc/31032/8VLNXdOqRw8fXPA1nPq6jOg3Wb0mdLU7yOGhF_jZM7M/fb8eba46a5c5e9f0bf36d4189832c07ec0e8f78bc0e062f58296049458f721eb/690491523" style="color: #08223E; text-decoration: underline;" target="_blank">manage your preferences</a> or <a href="https://pages.litmus.com/unsubscribe/u/31032/fb8eba46a5c5e9f0bf36d4189832c07ec0e8f78bc0e062f58296049458f721eb/690491523" style="color: #08223E; text-decoration: underline;" target="_blank">unsubscribe from&nbsp;all</a>. </span>
+
+									<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+										<tbody>
+											<tr>
+												<td style="font-size: 1px; line-height:  70px;" class="">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- end FOOTER_SECTION --></div>
+						</div>
+						<!-- end SWITCHER --></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+

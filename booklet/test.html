@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow">
+    <meta property="og:title" content="Two Newsletter">
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <title>Test based on sonic</title>
+    <style type="text/css">
+      /* RESETS AND CLIENT SPECIFIC */
+      div, p, a, li, td {-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -webkit-font-smoothing:antialiased !important;}
+      body {min-width:100% !important; Margin:0 auto !important; padding:0; background-color:#dedede;}
+      #outlook a {padding:0;}
+      .ReadMsgBody {width:100%;}
+      .ExternalClass {width:100%;}
+      .ExternalClass * {line-height:110%;}
+      table { }
+      table td {padding:0; border-collapse:collapse;}
+      img {display:block; line-height:100%; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;}
+  	  .pallette {display:none;}
+  	  
+  	  @media only screen {
+        a[x-apple-data-detectors] {color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;}
+        }
+  	  
+  	  @media only screen and (min-device-width:320px) and (max-device-width:1024px) {
+        a[href^='tel'], a[href^='sms'], a {color:inherit !important; cursor:default !important; text-decoration:none !important;}
+        }
+	  
+	  </style>
+      <style type="text/css">
+        @media screen and (max-width: 480px) {
+          *[class=hide]{
+          display:none !important;
+          }
+          .responsive_table {
+          width:100% !important;
+          max-width: 100% !important;
+          }
+        }
+      </style>
+
+      <style type="text/css">
+      
+  	  
+        /************* STYLING FOR THE WEBKIT ONLY GAME INCLUDING FALLBACKS *********/   
+        /* HIDE ON WEBKIT */   
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        
+          .webkit-hide {display: none;
+          }
+        
+        }	
+
+  	    /* YAHOO TARGETTING */  	   
+        @media screen yahoo {
+          .yhoohide {
+            display: none;
+          }
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  	    /* SAMSUNG TARGETTING */
+        #MessageWebViewDiv #game{
+        display: none !important;}
+        #secdiv #game{
+        display: none;}
+        
+  	    *{
+          margin:0 ;padding:0; font-size:12px; line-height:1.2;
+        }
+
+        #webkit-only {
+        display: inline !important; max-height: none !important; width: 320px;
+        }
+
+        body{
+          height:400px; overflow:scroll;
+        }
+  	  
+  	    #game{
+          position:relative; 
+          width:320px; 
+          height:600px; 
+          margin:0px auto 0;
+          background-position:0px 0px; 
+          background-repeat:no-repeat;
+        }
+        }
+  	   </style>
+
+      <style type="text/css">
+  	  
+  	  .ringz{
+        /*z-index:7;*/
+        position:absolute;
+        /*top: 300px;*/
+        left: 0px;
+  	  
+      } 
+  	
+  	  .ringss:checked{
+        overflow:hidden;
+        -webkit-animation-name:none;
+        -webkit-pointer-events: none;
+        pointer-events: none;
+        opacity:0;
+  	    display:none
+      }
+        
+  	  .ringss{
+        /*z-index:7;*/
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        width:64px;
+        height:58px;
+        display:block;
+        background-repeat:no-repeat !important;
+        background-image:url("https://kristianrobinson.co.uk/sonic_part2/imgs/ring.png");
+        /*animation:ringspin 1.8s steps(9) infinite forwards;*/
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        background-repeat:no-repeat;
+        cursor:pointer;
+        /*opacity:0.8;*/
+        border:none;
+        outline:none;
+    }
+
+    .ringss:hover{
+      opacity:1; 
+      animation-duration: 0.2s;
+    }
+	  
+	  @keyframes ringspin {
+
+      0% { background-position-x: 0%; }
+      100% { background-position-x: 100%;}
+    
+    }
+  
+    .ringss#ring_1 {
+      background-image: url('images/page-1.jpg');
+      top: 0px;
+      left: 0px;
+      width:320px;
+      height:562px;
+    }
+
+    .ringss#ring_2 {
+      top: 0px;
+      left: 0px;
+      width:320px;
+      height:562px;
+      background-image: url('images/page-3.jpg');
+    }
+
+    .ringss#ring_3 {
+      top: 0px;
+      left: 0px;
+      width:320px;
+      height:562px;
+      background-image: url('images/page-5.jpg');
+    }
+
+
+
+    .ringss#ring_4 {top: 60px; left:130px;  transform:scale(0.8)}
+    .ringss#ring_5 {top: 10px; left:220px; transform:scale(0.8)}
+	  
+	  /************************** RING MOVES **********************/
+
+
+	  .ringmoveone{
+      position:absolute;
+    }
+
+	  .ringmovetwo{
+      position:absolute;
+    }
+	
+	  .ringmovethree{
+      position:absolute;
+    }
+	
+
+	  
+	  
+	  .ringmovefour{
+
+      position:absolute;
+    }
+  	
+	  @keyframes ringmove4 {
+      0% { transform: scale(0.0); opacity:0}
+      89% { transform: scale(0.0); opacity:0.0; }
+      90% { transform: scale(0.3); opacity:0.0; }
+      100% { transform: scale(1.0); opacity:1.0;}
+    }
+	  
+	  .ringmovefive{
+      animation:ringmove5 0s; 
+      z-index:10;
+      position:absolute;
+    }
+	
+	  @keyframes ringmove5 {
+      0% { transform: scale(0.0); opacity:0}
+      89% { transform: scale(0.0); opacity:0.0; }
+      90% { transform: scale(0.3); opacity:0.0; }
+      100% { transform: scale(1.0); opacity:1.0;}
+    }
+  
+	  /************************** CLICKED ON FX CLICKED ON FX  **********************/
+	  
+	    .ringss:checked + .effect{}
+      
+
+      .effect {
+  	    position:absolute;
+        z-index:15;
+        width: 50px;
+        height: 50px;
+  	    -webkit-pointer-events: none;
+        pointer-events: none;
+        background-repeat:no-repeat;
+        opacity:0;
+      }
+
+      #ring_3  + .effect {top: 50px; left:160px;}
+      #ring_4  + .effect {top: 60px; left:130px;}
+      #ring_5  + .effect{top: 10px; left:220px;}
+
+	    .ringss:checked + .effect{
+      -webkit-animation-duration:0.5s;
+      -webkit-animation-iteration-count:1;
+      -webkit-animation-direction: normal;
+      }
+     
+      #ring_4:checked  + .effect,
+      #ring_5:checked  + .effect/*,
+	    #ring_6:checked  + .effect,
+      #ring_7:checked  + .effect,
+      #ring_8:checked  + .effect,
+      #ring_9:checked  + .effect,
+      #ring_10:checked  + .effect*/{
+      -webkit-animation-name:effect1;
+      }
+      
+      /*page 1 start*/
+
+      .page1{
+        position:absolute;
+        z-index:15;
+        top: 0px;
+        left: 0px;
+        width:320px;
+        height:562px;
+        -webkit-pointer-events: none;
+        pointer-events: none;
+        background-position:0px 0px;
+        background-repeat:no-repeat;
+        opacity:1; 
+      }
+     
+      #ring_1  + .page1 {
+        top: 0px;
+        left: 0px;
+      }
+
+      #ring_1:checked  + .page1{
+        -webkit-animation: swing-left-fwd both linear;
+        animation: swing-left-fwd both linear;
+        -webkit-animation-duration:3s;
+        animation-duration:3s;
+        -webkit-transform: rotateY(-160deg);
+        transform: rotateY(-160deg);
+        z-index:20;
+      }
+      .ringmoveone + .ringss:checked + .page1{
+        z-index:20;
+      }
+      .ringss:checked + .page1{
+      -webkit-animation-duration:5s;
+      -webkit-animation-iteration-count:1;
+      }
+
+      /*page 2 start*/
+
+      .page2 {
+        position:absolute;
+        z-index:14;
+        top: 0px;
+        left: 0px;
+        width:320px;
+        height:562px;
+        -webkit-pointer-events: none;
+        pointer-events: none;
+        background-position:0px 0px;
+        background-repeat:no-repeat;
+        opacity:1;
+      }
+
+      #ring_2  + .page2 {
+        top: 0px;
+        left: 0px;
+      }      
+
+
+      .ringmovetwo + .ringss:checked + .page2{
+        z-index: 40;
+
+      }
+
+
+      #ring_2:checked  + .page2{
+        -webkit-animation: swing-left-fwd2 both linear;
+        animation: swing-left-fwd2 both linear;
+        -webkit-animation-duration:3s;
+        animation-duration:3s;
+        -webkit-transform: rotateY(-160deg);
+        transform: rotateY(-160deg);
+        z-index:30;
+      }
+
+      .ringss:checked + .page2{
+      -webkit-animation-duration:5s;
+      -webkit-animation-iteration-count:1;
+      }
+
+
+      /*page 3 start*/
+
+      .page3 {
+        position:absolute;
+        z-index:11;
+        top: 0px;
+        left: 0px;
+        width:320px;
+        height:562px;
+        -webkit-pointer-events: none;
+        pointer-events: none;
+        background-position:0px 0px;
+        background-repeat:no-repeat;
+        opacity:1;
+      }
+
+      #ring_3  + .page3 {
+        top: 0px;
+        left: 0px;
+      }      
+
+
+      .ringmovethree + .ringss:checked + .page3{
+        z-index: 50;
+
+      }
+
+
+      #ring_3:checked  + .page3{
+        -webkit-animation: swing-left-fwd3 both linear;
+        animation: swing-left-fwd3 both linear;
+        -webkit-animation-duration:3s;
+        animation-duration:3s;
+        -webkit-transform: rotateY(-160deg);
+        transform: rotateY(-160deg);
+        z-index:30;
+      }
+
+      .ringss:checked + .page3{
+      -webkit-animation-duration:5s;
+      -webkit-animation-iteration-count:1;
+      }
+
+	  
+
+    /************************** KEYFRAMES **********************/
+
+    /*page 1*/
+
+      @keyframes swing-left-fwd {
+        0% {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-1.jpg');
+
+        }
+        45%{
+          -webkit-transform: rotateY(-85deg) skewY(-10deg)skewX(4deg);
+                  transform: rotateY(-85deg) skewY(-10deg)skewX(4deg);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-1.jpg');
+
+        }
+        50%{
+          -webkit-transform: rotateY(-90deg) skewY(-10deg)skewX(0deg);
+                  transform: rotateY(-90deg) skewY(-10deg)skewX(0deg);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-2-1.jpg');
+
+        }
+        100% {
+          -webkit-transform: rotateY(-160deg) skewY(-10deg);
+          transform: rotateY(-160deg) skewY(-10deg);
+          -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+          opacity: 1;
+          background-image: url('images/page-2-1.jpg');
+          z-index: 1;
+
+        }
+      }
+
+      /*page 2*/
+
+      @keyframes swing-left-fwd2 {
+        0% {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-3.jpg');
+
+        }
+        45%{
+          -webkit-transform: rotateY(-85deg) skewY(-10deg)skewX(4deg);
+                  transform: rotateY(-85deg) skewY(-10deg)skewX(4deg);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-3.jpg');
+
+        }
+        50%{
+          -webkit-transform: rotateY(-90deg) skewY(-10deg)skewX(0deg);
+                  transform: rotateY(-90deg) skewY(-10deg)skewX(0deg);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-4-1.jpg');
+
+        }
+        100% {
+          -webkit-transform: rotateY(-150deg) skewY(-15deg) skewX(0deg);
+          transform: rotateY(-150deg) skewY(-15deg) skewX(0deg);
+          -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+          opacity: 1;
+          background-image: url('images/page-4-1.jpg');
+          z-index: 10;
+
+        }
+      }
+	  
+      /*page 3*/
+
+      @keyframes swing-left-fwd3 {
+        0% {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-5.jpg');
+
+        }
+        45%{
+          -webkit-transform: rotateY(-85deg) skewY(-10deg)skewX(4deg);
+                  transform: rotateY(-85deg) skewY(-10deg)skewX(4deg);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-5.jpg');
+
+        }
+        50%{
+          -webkit-transform: rotateY(-90deg) skewY(-10deg)skewX(0deg);
+                  transform: rotateY(-90deg) skewY(-10deg)skewX(0deg);
+          -webkit-transform-origin: left bottom;
+                  transform-origin: left bottom;
+          background-image: url('images/page-6-1.jpg');
+
+        }
+        100% {
+          -webkit-transform: rotateY(-140deg) skewY(-15deg) skewX(0deg);
+          transform: rotateY(-140deg) skewY(-15deg) skewX(0deg);
+          -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+          opacity: 1;
+          background-image: url('images/page-6-1.jpg');
+          z-index: 20;
+
+        }
+      }
+    
+
+
+    /*@-webkit-keyframes effect1{
+
+        0% { 
+          -webkit-transform:rotatey(0deg) translatez(0);
+          -moz-transform:rotatey(0deg) translatez(0);
+          transform:rotatey(0deg) translatez(0);
+          z-index:0;
+          opacity:1;
+        }
+        30% { 
+          -webkit-transform:rotatey(-64deg) translatez(0);
+          -moz-transform:rotatey(-64deg) translatez(0);
+          transform:rotatey(-64deg) translatez(0);
+          z-index:0;
+          opacity:1;
+        }
+        80% { 
+          -webkit-transform:rotatey(-100deg) translatez(0);
+          -moz-transform:rotatey(-100deg) translatez(0);
+          transform:rotatey(-100deg) translatez(0);
+          z-index:0;
+          opacity:1;
+        }
+
+
+        100%{
+          -webkit-transform:rotatey(-145deg) translatez(0);
+          -moz-transform:rotatey(-145deg) translatez(0);
+          transform:rotatey(-145deg) translatez(0);
+          z-index:0;
+          opacity:1;
+        }
+
+      }*/
+
+	  
+	  /************************** GAME OVER AND COMPLETE **********************/
+	  
+	  .wincover{
+      position: absolute;
+	    z-index:100;
+      top:-300px;
+      left:0;
+      width:320px;
+      height:0px;
+    }
+      
+	  #ring_4:checked ~ *.wincover{
+      top:-300px;
+      height:600px;
+      -webkit-animation-name:win;
+      -webkit-animation-timing-function:linear;
+      -webkit-animation-duration:0.5s;
+      background-position:0px 0px;
+      background-repeat:no-repeat;
+      opacity:1;
+    }
+
+      @-webkit-keyframes win {
+      0% {top:-500px;opacity:0;}
+      97% {top:-500px;opacity:0;}
+      100% {top:0px;opacity:1;}
+    }
+	  
+	  
+	 .failedcover{
+      position: absolute;
+	    z-index:52;
+      top:-300px;
+      left:0;
+      width:320px;
+      height:600px;
+      -webkit-animation-name:failedcover;
+      -webkit-animation-timing-function:linear;
+      -webkit-animation-duration:19s;
+      background-position:0px 0px;
+      background-repeat:no-repeat;
+      opacity:1;
+    }
+      @-webkit-keyframes failedcover {
+      0% {top:-500px;opacity:0; height:0px;}
+      97% {top:-500px;opacity:0;}
+      100% {top:0px;opacity:1;}
+    }
+	  
+      
+	  
+	  
+	  </style>
+
+
+    <style type="text/css"> 
+	  
+	  
+	  /************************** OTHER IMAGES **********************/
+      .page1 {
+        background-image: url('images/page-1.jpg');
+      }
+
+
+      .effect {
+      background-image: url("https://kristianrobinson.co.uk/sonic_part2/imgs/sparkle.gif");
+      }
+      #score_board{
+      background-image: url("https://kristianrobinson.co.uk/sonic_part2/imgs/scoreboard.png");
+      }
+      #score_fin{
+      background-image: url("https://kristianrobinson.co.uk/sonic_part2/imgs/score.png");
+      }
+	    .timer{
+      background-image:url("https://kristianrobinson.co.uk/sonic_part2/imgs/timer.png");
+      }
+      .progress{
+      background-image:url("https://kristianrobinson.co.uk/sonic_part2/imgs/progress.png");
+      }
+	    .wincover{
+      background-image:url("https://kristianrobinson.co.uk/sonic_part2/imgs/winner1.png");
+      }
+	    .failedcover{
+      background-image: url("https://kristianrobinson.co.uk/sonic_part2/imgs/timesup.png");}
+	  
+     }
+      </style>
+    
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css" media="all">
+      table {border-collapse:collapse;}
+    </style>
+    <![endif]-->
+  </head>
+  <body margintop="0" marginleft="0" marginright="0" style="min-width:100% !important; Margin:0 auto; padding:0; background-color: #F7F7F7;">
+  
+ 
+  
+  
+  
+    <!-- //CONTAINER TABLE// -->
+   
+                <center>
+                  <div style="max-width:320px; max-height:0; overflow:hidden; mso-hide:all; display:none;" id="webkit-only">
+                     <div align="center" valign="top" style="font-size:0; max-width:320px;">
+           
+                             <div style="max-width:320px;">
+                              <div align="center" style="display:inline-block; max-width:320px; min-width:320px; vertical-align:top; width:100%;     margin-top: 150px;" class="responsive_table">
+                                 <!--[if mso]><!-->
+                                  
+                                  
+                                  <div id="game">
+                                 
+                                  
+                                <div class="ringz">
+
+
+                                   
+                                  <div class="ringmovefour">
+                                    <table width="320" height="600" cellpadding="0" cellspacing="0" border="0" class="w160">
+                                      <tr>
+                                        <td align="center" style="font-size: 30px; font-family: arial, sans-serif;" height="100">
+                                          Last Page
+                                        </td>
+                                      </tr>  
+                                      <tr>
+                                        <td align="left" height="100">
+                                        </td>
+                                      </tr>                                     
+                                      <tr>
+                                        <td align="center">
+                                          <table cellpadding="0" cellspacing="0" border="0" width="175" class="width_full" height="30" style="background-color:#259db0;">
+                                            <tbody>
+                                              <tr>
+                                                <td valign="middle" style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size:13px;" align="center">
+                                                  <div>
+                                                    <!--[if mso]>
+                                                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.paragon-europe.com/" style="height:30px;v-text-anchor:middle;width:175px;" stroke="f" fillcolor="#259db0">
+                                                        <w:anchorlock/>
+                                                          <center>
+                                                            <![endif]-->
+                                                    <a href="http://www.paragon-europe.com/" target="_blank" style="background-color:#259db0;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;line-height:30px;text-align:center;text-decoration:none;width:175px;-webkit-text-size-adjust:none;">
+                                                      <font style="color: #ffffff; text-decoration: none;">Get started</font>
+                                                    </a>
+                                                    <!--[if mso]>
+                                                        </center>
+                                                      </v:rect>
+                                                      <![endif]-->
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                   
+                                  </div>
+                                  <div class="ringmovethree">  
+                                    <input type="radio" name="ring_3"  id="ring_3"  class="ringss">
+                                    <div class="page3">
+
+                                    </div>
+                                  </div>
+
+                                  <div class="ringmovetwo">
+                                    <input type="radio" name="ring_2"  id="ring_2"  class="ringss">
+                                    <div class="page2"></div>
+                                  </div>
+                                  
+                                  <div class="ringmoveone">
+                                    <input type="radio" name="ring_1"  id="ring_1"  class="ringss">
+                                    <div class="page1"></div>
+                                  </div>
+                                  
+                                  
+                                  
+                                  
+
+                                  
+                                  <!--<div class="ringmovefive"> 
+                                    <input type="radio" name="ring_5"  id="ring_5"  class="ringss">
+                                     <div class="effect"></div>
+                                  </div> -->
+                                  
+                             
+                                </div>
+                                    
+        
+                                  <div class="timer">
+                                    <div class="progress"></div>
+                                  </div>
+                               
+                                  <div class="background_ptone">
+                                   <div class="hedgehog">
+                                     <div class="sonic"></div>
+                                   </div>
+                                  </div>
+                          </div>
+                                 
+                                        
+                                        
+                                
+                       </div>
+                        </div>         
+                                 <!--<![endif]-->
+                            
+                    </div>
+                  </div>
+                      
+                </center>
+            
+       
+    <!-- //CONTAINER TABLE ENDS// --> 
+    
+    
+        <!-- //CONTAINER ENDS// --> 
+                <center style="width:100% !important; height:100% !important; table-layout:fixed !important; text-size-adjust:none !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
+                <div style="max-width:600px; padding: 20px 20px;">
+                 <div style="font-family:Arial, sans-serif; font-size:11px; color:#000001; line-height:25px; text-align:center; "><p style="margin:0;"> <br /><b>PLEASE VIEW IN WEBKIT OR SAFARI</b><br />This was created as part of a Webkit Only experiment for email. It will not be sent or use for marketing purposes.</p></div><br />
+                  <div style="font-family:Arial, sans-serif; font-size:11px; color:#000001; line-height:25px; text-align:center;"><p style="margin:0;"><b><a href="http://blog.two-uk.com/2017/01/18/hedgehog_email/" target="_blank" style="color:#000001; text-decoration:underline !important;">Read the Blog</a></b>. </p></div>
+                 <br />
+                 <div style="font-family:Arial, sans-serif; font-size:11px; color:#000001; line-height:25px; text-align:center; "><p style="margin:0;">SEGA and Sonic The Hedgehog had no part in the creation of this. It entirely my own work, and created as part research and experimentation.</p></div>
+                 </div>
+                </center>
+    
+    
+     
+  </body>
+</html>

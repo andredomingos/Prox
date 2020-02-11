@@ -1,0 +1,1725 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+  <title>🏁🏎️🏎️🏎️🏁🍾🍾</title>
+  <style type="text/css">
+    /* General styling for full email */
+    @-ms-viewport{width:device-width;}
+    #outlook a{padding:0;}
+    .ReadMsgBody{width:100%;}
+    .ExternalClass{width:100%;}
+    .ExternalClass *{line-height:100%}
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;}
+    div, p, a, li, td{-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+    table{border-spacing:0;border-collapse:collapse;margin:0 auto;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+    body{min-height:1000px;}
+    img{display:block;border:0;margin:0;padding:0;-ms-interpolation-mode:bicubic;}
+    .device_width{width:540px;}
+    .only_mobile{display:none;width:0;max-height:0;overflow:hidden;float:left;}
+    .gmail{width:0!important;display:none!important;}
+    a[x-apple-data-detectors]{color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;}
+    #MessageViewBody a{color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;}
+    u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;}
+    a:link, span.MsoHyperlink {mso-style-priority:100!important;color:inherit!important;color:inherit;text-decoration:none!important;}
+    img.g-img + div{display:none;}
+    input:focus {outline:none;}
+    input, textarea, select, a {outline: none;}
+    .iphone5_carousel {display:none;}
+    #header_desktop_background {
+      background-image:url('header_desktop_background.jpg');
+    }
+    #header_mobile_background {
+      background-image:url('header_mobile_background.jpg');
+    }
+    /* General Media Query for responsive device */
+    @media only screen and (max-width:480px), only screen and (max-device-width:480px){
+      *[class="device_width"]{width:100%!important;overflow:hidden!important;margin:0 auto!important;}
+      *[class="only_desktop"]{display:none!important;}
+      *[class="only_mobile"]{display:block!important;width:auto!important;max-height:inherit!important;overflow:visible!important;float:none!important;}
+      *[class="fluid"]{width:100%!important;height:auto!important;}
+      a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important;}
+      *[class="gmail_hidden"]{width:0!important;display:none!important;}
+      *[class="mobile_padding"]{padding-left:30px!important;padding-right:30px!important;}
+      *[class="mobile_padding_weather"]{padding-left:30px!important;padding-right:20px!important;}
+      *[class="mobile_padding_footer"]{padding-left:20px!important;padding-right:20px!important;}
+      *[class="cta_pad"] a {padding: 19px 50px!important;}
+      *[class="cta_pad_lower"] a {padding: 19px 50px!important;}
+      *[class="fluid_cta_text"]{width:100%!important;}
+      *[class="footer_width"]{width:90%!important;}
+      *[class="footer_links"]{width:24%!important;}
+      *[class="footer_links_unsub"]{width:26%!important}
+      *[class="footer_links_padding"]{padding:25px 0 0 5px!important;}
+      *[class="weather_icon"]{padding:10px 10px 0 0!important;}
+    }
+
+
+/********************************
+
+      Interactive email will be seen on webkit devices, iOS - mobile and iPad, Mac OS applemail, Android native, apart from some intances for iPhone5 due to screen size and Android native not supporting 'absolute positioning'.
+      All other email cleints will receive fallback where dropdown pods will be already expanded, videos and carousels will be a static fallback image.
+      Each Dropdown section is coded in two parts, the top part is the fallback, the bottom part is interactive.
+      Both sections must be updated before test and send.
+
+********************************/
+
+
+    /*  Interactive email styling below. */
+
+    /* Media Queries for Dropdown menus start */
+    /* Dropdown menus Desktop */
+    @media only screen and (-webkit-min-device-pixel-ratio:0) and (min-width:481px) {
+        .toggle_container .image_toggle_double_line,
+        .toggle_container .image_toggle_single_line {
+            pointer-events: none;
+            -ms-transition: .5s ease-in-out;
+            -webkit-transition: .5s ease-in-out;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426754_icon_dropdown_unchecked.png');
+            background-repeat: no-repeat;
+            background-position: right center;
+            display: inline-block;
+            width: 500px;
+            height: 44px;
+            margin-top: -45px;
+        }
+        .dropdown_container .dropdown_content {
+            margin-top: -250px;
+            -ms-transition: margin-top .75s ease-in-out;
+            -webkit-transition: margin-top .75s ease-in-out;
+        }
+        .dropdown_container .carousel_content,
+        .dropdown_container .image_content,
+        .dropdown_container .video_content {
+            -ms-transition: margin-top 1s ease-in-out;
+            -webkit-transition: margin-top 1s ease-in-out;
+        }
+        .dropdown_container .image_content {
+            margin-top: -800px;
+        }
+        .dropdown_container .carousel_content {
+            margin-top: -500px;
+        }
+        .dropdown_container .video_content {
+            margin-top: -600px;
+        }
+    }
+
+    /* Dropdown menus Mobile */
+    @media only screen and (-webkit-min-device-pixel-ratio:0) and (max-width:480px) {
+        .toggle_container .image_toggle_double_line,
+        .toggle_container .image_toggle_single_line {
+            pointer-events: none;
+            -ms-transition: .5s ease-in-out;
+            -webkit-transition: .5s ease-in-out;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426754_icon_dropdown_unchecked.png');
+            background-repeat: no-repeat;
+            background-position: right center;
+            display: inline-block;
+            width: 300px;
+            height: 25px;
+        }
+        .toggle_container .image_toggle_double_line {
+            margin-top: -50px;
+        }
+        .toggle_container .image_toggle_single_line {
+            margin-top: -35px;
+        }
+        .header_copy {
+            display: none;
+            width: 70%!important;
+        }
+        .dropdown_container .dropdown_content {
+            margin-top: -400px!important;
+            -ms-transition: margin-top .75s ease-in-out;
+            -webkit-transition: margin-top .75s ease-in-out;
+        }
+        .dropdown_container .image_content {
+            margin-top: -650px!important;
+            -ms-transition: margin-top 1s ease-in-out;
+            -webkit-transition: margin-top 1s ease-in-out;
+        }
+        .dropdown_container .carousel_content {
+            margin-top: -500px!important;
+            -ms-transition: margin-top 1s ease-in-out;
+            -webkit-transition: margin-top 1s ease-in-out;
+        }
+        .dropdown_container .video_content {
+            margin-top: -500px!important;
+            -ms-transition: margin-top 1s ease-in-out;
+            -webkit-transition: margin-top 1s ease-in-out;
+        }
+    }
+
+    /* Dropdown menus General for both Desktop and Mobile */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .dropdown_standard {
+            display: none!important;
+        }
+        .dropdown_webkit {
+            display: block!important;
+            width: auto!important;
+            max-height: inherit!important;
+            overflow: visible!important;
+            float: none!important;
+        }
+        body {
+            -webkit-animation: bugfix infinite .5s
+        }
+        @-webkit-keyframes bugfix {
+            from,
+            to {
+                padding: 0;
+            }
+        }
+        #input_button_dropdown_carousel_01[type=checkbox],
+        #input_button_dropdown_image_01[type=checkbox],
+        #input_button_dropdown_video_01[type=checkbox],
+        #input_button_dropdown_standard_01[type=checkbox] {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            display: none;
+        }
+        .toggle_container,
+        .toggle_under {
+            display: inline-block;
+            cursor: pointer;
+        }
+        .toggle_container {
+            user-select: none;
+        }
+        .dropdown_container {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .toggle_under {
+            max-height: none;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        #input_button_dropdown_carousel_01[type=checkbox]:checked+.toggle_container .dropdown_container .carousel_content,
+        #input_button_dropdown_image_01[type=checkbox]:checked+.toggle_container .dropdown_container .image_content,
+        #input_button_dropdown_video_01[type=checkbox]:checked+.toggle_container .dropdown_container .video_content,
+        #input_button_dropdown_standard_01[type=checkbox]:checked+.toggle_container .dropdown_container .dropdown_content {
+            margin-top: 0!important;
+        }
+        #input_button_dropdown_carousel_01[type=checkbox]:checked+.toggle_container .image_toggle_double_line,
+        #input_button_dropdown_carousel_01[type=checkbox]:checked+.toggle_container .image_toggle_single_line,
+        #input_button_dropdown_image_01[type=checkbox]:checked+.toggle_container .image_toggle_double_line,
+        #input_button_dropdown_image_01[type=checkbox]:checked+.toggle_container .image_toggle_single_line,
+        #input_button_dropdown_video_01[type=checkbox]:checked+.toggle_container .image_toggle_double_line,
+        #input_button_dropdown_video_01[type=checkbox]:checked+.toggle_container .image_toggle_single_line,
+        #input_button_dropdown_standard_01[type=checkbox]:checked+.toggle_container .image_toggle_double_line,
+        #input_button_dropdown_standard_01[type=checkbox]:checked+.toggle_container .image_toggle_single_line {
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426753_icon_dropdown_checked.png');
+        }
+    }
+
+    /* Dropdown menus Samsung Mail */
+    #MessageViewBody .toggle_container .image_toggle_double_line,
+    #MessageViewBody .toggle_container .image_toggle_single_line {
+      pointer-events: none;
+      -ms-transition: .5s ease-in-out;
+      -webkit-transition: .5s ease-in-out;
+      background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426754_icon_dropdown_unchecked.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+      width: 285px;
+      height: 25px;
+    }
+
+    /* Dropdown menus wide devices */
+    @media only screen and (min-width : 450px) and (max-width : 480px) {
+        .toggle_container .image_toggle_double_line {
+          width: 375px;
+          margin-top: -45px;
+        }
+        .toggle_container .image_toggle_single_line {
+          width: 375px;
+          margin-top: -35px;
+        }
+        .weather_icon {padding:10px 22px 0 0!important;}
+    }
+
+    @media only screen and (min-width : 410px) and (max-width : 449px) {
+        .toggle_container .image_toggle_double_line {
+          width: 345px;
+          margin-top: -45px;
+        }
+        .toggle_container .image_toggle_single_line {
+          width: 345px;
+          margin-top: -35px;
+        }
+        .weather_icon {padding:10px 30px 0 0!important;}
+    }
+
+    @media only screen and (min-width : 380px) and (max-width : 409px) {
+        .toggle_container .image_toggle_double_line {
+          width: 325px;
+          margin-top: -45px;
+        }
+        .toggle_container .image_toggle_single_line {
+          width: 325px;
+          margin-top: -35px;
+        }
+    }
+
+    /* Dropdown menus iPhone 5 & SE */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+        .toggle_container .image_toggle_double_line {
+          width: 280px;
+          margin-top: -45px;
+        }
+        .toggle_container .image_toggle_single_line {
+          width: 280px;
+          margin-top: -35px;
+        }
+        .weather_icon {padding:10px 15px 0 0!important;}
+    }
+
+    /* Dropdown menus devices iPhone6, iPhone7, iPhone8, iPhoneX */
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+        .toggle_container .image_toggle_double_line {
+          width: 300px;
+          margin-top: -45px;
+        }
+        .toggle_container .image_toggle_single_line {
+          width: 300px;
+          margin-top: -40px;
+        }
+        .weather_icon {padding:10px 10px 0 0!important;}
+    }
+
+    /* Dropdown menus wider devices iPhone6+, iPhone7+, iPhone8+ */
+    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+        .toggle_container .image_toggle_double_line {
+          width: 335px;
+          margin-top: -45px;
+        }
+        .toggle_container .image_toggle_single_line {
+          width: 335px;
+          margin-top: -40px;
+        }
+        .weather_icon {padding:10px 15px 0 0!important;}
+    }
+    /* Media Queries for Dropdown menus end */
+
+
+    /* Media Queries for Carousel start */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .fallback-carousel {
+            display: none;
+        }
+        #MessageViewBody .fallback-carousel,
+        body.MsgBody .fallback-carousel {
+            display: block;
+        }
+        #MessageViewBody .carousel-wrapper,
+        body.MsgBody .carousel-wrapper {
+            display: none!important;
+        }
+        .interactive {
+            display: block!important;
+            max-height: none!important;
+        }
+        .carousel-wrapper {
+            position: relative;
+            display: block!important;
+            overflow: hidden;
+            width: 520px;
+            height: 296px;
+            margin-top: 20px;
+        }
+        .button1,
+        .button2,
+        .button3 {
+            visibility: visible!important;
+            display: block!important;
+            max-height: 75px!important;
+            position: absolute!important;
+            z-index: 7;
+            top: 120px;
+            left: -1000px;
+            width: 20px;
+            height: 32px;
+            background-size: cover;
+        }
+        .scroll {
+            position: relative;
+            width: 500px;
+            transition: all .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+        }
+        .slide1-content,
+        .slide2-content,
+        .slide3-content {
+            display: block!important;
+            max-height: none!important;
+            position: absolute;
+            top: 0;
+            width: 500px;
+            height: 296px;
+            opacity: 0;
+        }
+        .slide1-content {
+            left: 0;
+        }
+        .slide2-content {
+            left: 500px;
+        }
+        .slide3-content {
+            left: 1000px;
+        }
+        #slide-1:checked~div .scroll {
+            left: 0!important;
+        }
+        #slide-1:checked~div .slide1-content {
+            opacity: 1;
+            transition: opacity .3s ease-in;
+        }
+        #slide-1:checked~div .button1 {
+            left: 0!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426751_carousel_left.png');
+            opacity: .5;
+        }
+        #slide-1:checked~div .button2 {
+            left: 500px!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426752_carousel_right.png')
+        }
+        #slide-2:checked~div .scroll {
+            left: -500px!important;
+            opacity: 1!important;
+        }
+        #slide-2:checked~div .slide2-content {
+            opacity: 1;
+            transition: opacity .3s ease-in;
+        }
+        #slide-2:checked~div .button1 {
+            left: 0!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426751_carousel_left.png');
+        }
+        #slide-2:checked~div .button3 {
+            left: 500px!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426752_carousel_right.png');
+        }
+        #slide-3:checked~div .scroll {
+            left: -1000px!important;
+            opacity: 1!important;
+        }
+        #slide-3:checked~div .slide3-content {
+            opacity: 1;
+            transition: opacity .3s ease-in;
+        }
+        #slide-3:checked~div .button2 {
+            left: 0!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426751_carousel_left.png');
+        }
+        #slide-3:checked~div .button3 {
+            left: 500px!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426752_carousel_right.png');
+            opacity: .5;
+        }
+    }
+
+    /*  Carousel Mobile  */
+    @media only screen and (-webkit-min-device-pixel-ratio:0) and (max-width:480px),(max-device-width:480px) {
+        .block {
+            display: block!important;
+        }
+        .hide {
+            display: none!important;
+        }
+        .carousel-wrapper {
+            position: relative;
+            display: block!important;
+            overflow: hidden;
+            width: 300px;
+            height: 178px;
+            margin-top: 20px;
+        }
+        .button1,
+        .button2,
+        .button3 {
+            visibility: visible!important;
+            display: block!important;
+            max-height: 50px!important;
+            position: absolute!important;
+            z-index: 7;
+            top: 60px;
+            left: -1000px;
+            width: 20px;
+            height: 32px;
+            background-size: cover;
+        }
+        .scroll {
+            position: relative;
+            width: 300px;
+            transition: all .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+        }
+        .slide1-content,
+        .slide2-content,
+        .slide3-content {
+            display: block!important;
+            max-height: none!important;
+            position: absolute;
+            top: 0;
+            width: 300px;
+            height: 296px;
+            opacity: 0;
+        }
+        .slide1-content {
+            left: 0;
+        }
+        .slide2-content {
+            left: 300px;
+        }
+        .slide3-content {
+            left: 600px;
+        }
+        #slide-1:checked~div .scroll {
+            left: 0!important;
+        }
+        #slide-1:checked~div .slide1-content {
+            opacity: 1;
+            transition: opacity .3s ease-in;
+        }
+        #slide-1:checked~div .button1 {
+            left: 0!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426751_carousel_left.png');
+            opacity: .5
+        }
+        #slide-1:checked~div .button2 {
+            left: 278px!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426752_carousel_right.png');
+        }
+        #slide-2:checked~div .scroll {
+            left: -300px!important;
+            opacity: 1!important;
+        }
+        #slide-2:checked~div .slide2-content {
+            opacity: 1;
+            transition: opacity .3s ease-in;
+        }
+        #slide-2:checked~div .button1 {
+            left: 0!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426751_carousel_left.png');
+        }
+        #slide-2:checked~div .button3 {
+            left: 278px!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426752_carousel_right.png');
+        }
+        #slide-3:checked~div .scroll {
+            left: -600px!important;
+            opacity: 1!important;
+        }
+        #slide-3:checked~div .slide3-content {
+            opacity: 1;
+            transition: opacity .3s ease-in;
+        }
+        #slide-3:checked~div .button2 {
+            left: 0!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426751_carousel_left.png');
+        }
+        #slide-3:checked~div .button3 {
+            left: 278px!important;
+            background-image: url('https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426752_carousel_right.png');
+            opacity: .5
+        }
+    }
+    /* Carousel iPhone5 */
+    @media only screen and (min-device-width:320px) and (max-device-width:568px) and (-webkit-device-pixel-ratio:2) and (device-aspect-ratio:40/71) {
+        .carousel-wrapper {
+            display: none!important;
+        }
+        .iphone5_carousel {
+            display: block!important;
+        }
+    }
+    /* Media Queries for Carousel end */
+
+
+
+    /* Media Queries for Video start */
+    .video-wrapper {
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (-webkit-min-device-pixel-ratio:0) and (min-device-width:1024px) {
+        .video-fallback,
+        .video-wrapper {
+            width: 100%!important;
+            height: auto!important;
+        }
+        .video-wrapper {
+            display: block!important;
+        }
+        .video-fallback {
+            display: none!important;
+        }
+    }
+
+    /*  Video iPhone5 */
+    @media only screen and (min-device-width:320px) and (max-device-width:568px) and (-webkit-device-pixel-ratio:2) and (device-aspect-ratio:40/71) {
+        .video-wrapper {
+            width: 280px!important;
+            max-width: 280px!important;
+        }
+    }
+    /*  Video iPhone */
+    @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+        div[class^=video-wrapper] {
+            display: block!important;
+        }
+        div[class^=video-fallback] {
+            display: none!important;
+        }
+    }
+    /*  Video Android */
+    #MessageViewBody .video-wrapper {
+        display: block!important;
+    }
+
+    #MessageViewBody .video-fallback {
+        display: none!important;
+    }
+    /* Media Queries for Video end */
+
+  </style>
+</head>
+<body style="background-color:#dddddd;width:100%;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;-webkit-text-size-adjust:none;">
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+      <td align="center" valign="top">
+        <!--  Device Width Wrapper -->
+        <table class="device_width" width="600" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#101018">
+          <tr>
+            <td align="center" valign="top" bgcolor="#101018">
+              <!-- Content start -->
+              <!-- Header Start -->
+              <table class="only_desktop" width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                  <td align="left" valign="top">
+                    <!--[if gte mso 9]>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td align="center" valign="top">
+                          <a href="#link_header" target="_blank">
+                            <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/header_desktop_top.jpg" width="600" height="auto" border="0" style="display:block;" alt="F1">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td id="header_desktop_background" align="center" valign="top" background="header_desktop_background.jpg" style="background-image:url('header_desktop_background.jpg');width:100%;height:385px;background-repeat:no-repeat;background-size:cover;">
+                          <a href="#link_header" target="_blank">
+                            <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/header_desktop_top.gif" width="600" height="auto" border="0" style="display:block;" alt="">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--<![endif]-->
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td align="center" valign="top" style="padding:0 0 20px 0;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                            <tr>
+                              <td align="left" valign="top">
+                                <a href="#link_header" target="_blank">
+                                  <img class="fluid" src="http://www.movable-ink-7158.com/p/rp/d68a0881e7cbfd54.png" width="393" height="auto" border="0" style="display:block;" alt="">
+                                </a>
+                              </td>
+                              <td align="left" valign="top">
+                                <a href="#link_header" target="_blank">
+                                  <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/header_desktop_clock_right.gif" width="207" height="auto" border="0" style="display:block;" alt="">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Mobile only block -->
+              <!--[if !mso]><!-->
+              <table class="only_mobile" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td valign="top" align="center" class="only_mobile" style="width:0;max-height:0;overflow:hidden;float:left;display:none">
+                    <div class="only_mobile" style="display:none;max-height:0px;overflow:hidden">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                          <td align="center" valign="top" style="padding:0 0 20px 0;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td id="header_mobile_background" align="center" valign="top" background="header_mobile_background.jpg" style="background-image:url('header_mobile_background.jpg');width:100%;height:382px;background-repeat:no-repeat;background-size:cover;">
+                                  <a href="#link_header" target="_blank">
+                                    <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/header_mobile_top.gif" width="100%" height="auto" border="0" style="display:block;" alt="">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                    <tr>
+                                      <td align="left" valign="top" style="padding-left:-50%;">
+                                        <a href="#link_header" target="_blank">
+                                          <img class="fluid" src="http://www.movable-ink-7158.com/p/rp/97bdf997db4c08e8.png" width="100%" height="auto" border="0" style="display:block;" alt="">
+                                        </a>
+                                      </td>
+                                      <td align="left" valign="top">
+                                        <a href="#link_header" target="_blank">
+                                          <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/header_mobile_clock_right.gif" width="100%" height="auto" border="0" style="display:block;" alt="">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <!--<![endif]-->
+              <!-- Header title/cta start -->
+              <!-- Edit here for header title desktop -->
+              <table class="only_desktop" width="520" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                  <td align="left" valign="top">
+                    <table class="fluid" width="520" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td class="mobile_padding" align="left" valign="top" style="padding:20px 40px 0px 40px;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td align="center" valign="top" >
+                                <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_header_desktop.png" width="520" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#FFFFFF;" alt="TITLE HEADER DESKTOP ALT">
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Edit here for header title mobile -->
+              <!--[if !mso]><!-->
+              <table border="0" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td valign="top" align="center" class="only_mobile" style="width:0;max-height:0;overflow:hidden;float:left;display:none">
+                    <div class="only_mobile" style="display:none;max-height:0px;overflow:hidden">
+                      <table border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                          <td align="center" valign="top" style="padding:10px 30px 0px 30px;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td align="center" valign="top">
+                                  <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_header_mobile.png" width="300" height="auto" border="0" style="display:block; font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#FFFFFF;" alt="TITLE HEADER MOBILE ALT">
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <!--<![endif]-->
+              <!-- Mobile only block -->
+              <!-- CTA live text -->
+              <center>
+                <div>
+                  <!-- Edit here for CTA Outlook -->
+                  <!--[if mso]>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td align="left" valign="top" style="padding:20px 40px 30px 40px;">
+                          <table width="520" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ff1c0c">
+                            <tr>
+                              <td align="center" valign="top" style="width:520px;height:52px;background-color:#ff1c0c;">
+                                <div style="line-height:15px; height:15px; font-size:1px; mso-line-height-rule: exactly;-webkit-text-size-adjust:none;">&nbsp;</div>
+                                <a href="#link_header" target="_blank" style="font-size: 16px; font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; color: #ffffff;text-decoration: none;border-radius: 5px; border: 1px solid #ff1c0c; display: inline-block;">
+                                  <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/cta_button_top.png" width="250" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; color:#FFFFFF;" alt="CTA BUTTON TOP ALT">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  <![endif]-->
+
+                  <!-- Edit here for CTA -->
+                  <!--[if !mso]><!-->
+                  <table class="fluid" width="520" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                      <td class="mobile_padding" align="left" valign="top" style="padding:20px 40px 30px 40px;">
+                        <table border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td class="cta_pad" align="center" style="border-radius: 5px;" bgcolor="#ff1c0c">
+                              <a href="#link_header" target="_blank" style="font-size: 16px; font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; color: #ffffff;text-decoration: none;border-radius: 5px; padding: 20px 133px; border: 1px solid #ff1c0c; display: inline-block;">
+                                <img class="fluid_cta_text" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/cta_button_top.png" width="250" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; color:#FFFFFF;" alt="CTA BUTTON TOP ALT">
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--<![endif]-->
+
+                </div>
+              </center>
+              <!-- Header title/cta end -->
+              <!-- Header End -->
+
+
+              <!-- Intro copy start -->
+              <table class="fluid" width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                  <td class="mobile_padding" align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; line-height:20px; color:#FFFFFF; mso-line-height-rule:exactly; padding:0 40px 20px 40px;">
+                     ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sapien risus. Duis imperdiet non tortor vitae vehicula. Etiam urna felis, ullamcorper vitae semper vehicula, aliquam at sem. Aenean sed faucibus risus, vel vulputate nisl. Vestibulum dapibus eros enim, quis bibendum odio semper non.
+                  </td>
+                </tr>
+              </table>
+              <!-- Intro copy end -->
+
+
+              <!-- DropDown Image pod start -->
+              <table class="fluid" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td align="center" valign="top">
+                    <table width="100%" class="dropdown_standard" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td class="dropdown_standard" valign="top" align="left" style="display:block; width:auto; max-height:inherit; overflow:visible; float:none;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td class="mobile_padding" align="left" valign="top" style="padding:0 40px 20px 40px;">
+                                <div class="dropdown_standard" style="display:block; width:auto; max-height:inherit; overflow:visible; float:none;">
+                                  <table class="dropdown_standard" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#101018">
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img class="fluid" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426760_line_curve.jpg" alt="" border="0" style="display:block;" width="520" height="21">
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:10px 0 10px 0;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                          <tr>
+                                            <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                              <a href="#LINK POD 01" target="_blank" style="display:block; font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly; text-decoration:none;">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_pod01.png" width="240" height="auto" border="0" style="display:block;" alt="TITLE POD 01">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                          <tr>
+                                            <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:21px; color:#ffffff; mso-line-height-rule:exactly;padding:5px 0 10px 0;">
+                                              POD - COPY / IMAGE / COPY / CTA
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; line-height:20px; color:#8B8B90; mso-line-height-rule:exactly; padding:0">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sapien risus. Duis imperdiet non tortor vitae vehicula.
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:30px 0 30px 0;">
+                                        <a href="#LINK POD 01" target="_blank" >
+                                          <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/image_pod01.jpg" width="520" height="auto" border="0" style="display:block;" alt="">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; line-height:20px; color:#8B8B90; mso-line-height-rule:exactly; padding:0">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sapien risus. Duis imperdiet non tortor vitae vehicula. Etiam urna felis, ullamcorper vitae semper vehicula, aliquam at sem. Aenean sed faucibus risus, vel vulputate nisl. Vestibulum dapibus eros enim, quis bibendum odio semper non.
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:20px 0 0 0;">
+                                        <a href="#LINK POD 01" target="_blank" style="text-decoration:none;">
+                                          <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/cta_pod01.png" width="240" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:14px; color:#ff1c0c;" alt="CTA POD 01&nbsp;&nbsp;&nbsp;&nbsp;&#9658;">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- DROPDOWN FOR WEBKIT -->
+                    <!--[if !mso]><!-->
+                    <table width="100%" class="dropdown_webkit" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td class="dropdown_webkit" valign="top" align="left" style="width:0;max-height:0;overflow:hidden;float:left;display:none">
+                          <div class="dropdown_webkit" style="display:none;max-height:0px;overflow:hidden">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td class="mobile_padding" align="left" valign="top" style="padding:0 40px 20px 40px;">
+                                  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#101018">
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img class="fluid" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426760_line_curve.jpg" alt="" border="0" style="display:block;" width="520" height="auto" >
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:0">
+                                        <input type="checkbox" id="input_button_dropdown_image_01" />
+                                        <label class="toggle_container" for="input_button_dropdown_image_01" >
+                                          <div class="toggle_under header_copy" style="padding:10px 0 0 0; background-color:#101018;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                                  <a href="#LINK POD 01" target="_blank" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly; text-decoration:none;">
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_pod01.png" width="240" height="auto" border="0" style="display:block;" alt="TITLE POD 01">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:21px; color:#ffffff; mso-line-height-rule:exactly;">
+                                                  POD - COPY / IMAGE / COPY / CTA
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <div class="image_toggle_single_line"></div>
+                                          <div class="dropdown_container">
+                                            <table class="image_content" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#101018" style="width:100%">
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; line-height:20px; color:#8B8B90; mso-line-height-rule:exactly; padding:10px 0 0 0;">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sapien risus. Duis imperdiet non tortor vitae vehicula. Etiam urna felis, ullamcorper vitae semper vehicula, aliquam at sem. Aenean sed faucibus risus, vel vulputate nisl. Vestibulum dapibus eros enim, quis bibendum odio semper non.
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top" style="padding:30px 0 30px 0;">
+                                                  <a href="#LINK POD 01" target="_blank" >
+                                                    <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/image_pod01.jpg" width="520" height="auto" border="0" style="display:block;" alt="">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; line-height:20px; color:#8B8B90; mso-line-height-rule:exactly; padding:0">
+                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sapien risus. Duis imperdiet non tortor vitae vehicula. Etiam urna felis, ullamcorper vitae semper vehicula, aliquam at sem. Aenean sed faucibus risus, vel vulputate nisl. Vestibulum dapibus eros enim, quis bibendum odio semper non.
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top" style="padding:20px 0 0 0;">
+                                                  <a href="#LINK POD 01" target="_blank" style="text-decoration:none;">
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/cta_pod01.png" width="240" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:14px; color:#ff1c0c;" alt="CTA POD 01&nbsp;&nbsp;&nbsp;&nbsp;&#9658;">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </label>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--<![endif]-->
+                    <!-- DROPDOWN FOR WEBKIT -->
+                  </td>
+                </tr>
+              </table>
+              <!-- DropDown Image pod end -->
+
+
+
+              <!-- DropDown standard pod start -->
+              <table class="fluid" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td align="center" valign="top">
+                    <table width="100%" class="dropdown_standard" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td class="dropdown_standard" valign="top" align="left" style="display:block; width:auto; max-height:inherit; overflow:visible; float:none;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td class="mobile_padding" align="left" valign="top" style="padding:0 40px 20px 40px;">
+                                <div class="dropdown_standard" style="display:block; width:auto; max-height:inherit; overflow:visible; float:none;">
+                                  <table class="dropdown_standard" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#101018">
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img class="fluid" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426760_line_curve.jpg" alt="" border="0" style="display:block;" width="520" height="21">
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:10px 0 10px 0;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                          <tr>
+                                            <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                              <a href="#LINK POD 02" target="_blank" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly; text-decoration:none;">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_pod02.png" width="240" height="auto" border="0" style="display:block;" alt="TITLE POD 02">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                          <tr>
+                                            <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:21px; color:#ffffff; mso-line-height-rule:exactly;padding:5px 0 5px 0;">
+                                              POD - COPY / NO IMAGE / CTA
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; line-height:20px; color:#8B8B90; mso-line-height-rule:exactly; padding:0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sapien risus. Duis imperdiet non tortor vitae vehicula. Etiam urna felis, ullamcorper vitae semper vehicula, aliquam at sem. Aenean sed faucibus risus, vel vulputate nisl. Vestibulum dapibus eros enim, quis bibendum odio semper non.
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:20px 0 0 0;">
+                                        <a href="#LINK POD 02" target="_blank" style="text-decoration:none;">
+                                          <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/cta_pod02.png" width="240" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:14px; color:#ff1c0c;" alt="CTA POD 02&nbsp;&nbsp;&nbsp;&nbsp;&#9658;">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- DROPDOWN FOR WEBKIT -->
+                    <!--[if !mso]><!-->
+                    <table width="100%" class="dropdown_webkit" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td class="dropdown_webkit" valign="top" align="left" style="width:0;max-height:0;overflow:hidden;float:left;display:none">
+                          <div class="dropdown_webkit" style="display:none;max-height:0px;overflow:hidden">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td class="mobile_padding" align="left" valign="top" style="padding:0 40px 20px 40px;">
+                                  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#101018">
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img class="fluid" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426760_line_curve.jpg" alt="" border="0" style="display:block;" width="520" height="auto" >
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:0">
+                                        <input type="checkbox" id="input_button_dropdown_standard_01" />
+                                        <label class="toggle_container" for="input_button_dropdown_standard_01" >
+                                          <div class="toggle_under header_copy" style="padding:10px 0 0 0; background-color:#101018;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                                  <a href="#LINK POD 02" target="_blank" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly; text-decoration:none;">
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_pod02.png" width="240" height="auto" border="0" style="display:block;" alt="TITLE POD 02">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:21px; color:#ffffff; mso-line-height-rule:exactly;">
+                                                  POD - COPY / NO IMAGE / CTA
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <div class="image_toggle_single_line"></div>
+                                          <div class="dropdown_container">
+                                            <table class="dropdown_content" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#101018" style="width:100%">
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; line-height:20px; color:#8B8B90; mso-line-height-rule:exactly; padding:10px 0 0 0;">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sapien risus. Duis imperdiet non tortor vitae vehicula. Etiam urna felis, ullamcorper vitae semper vehicula, aliquam at sem. Aenean sed faucibus risus, vel vulputate nisl. Vestibulum dapibus eros enim, quis bibendum odio semper non.
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top" style="padding:20px 0 0 0;">
+                                                  <a href="#LINK POD 02" target="_blank" style="text-decoration:none;">
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/cta_pod02.png" width="240" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:14px; color:#ff1c0c;" alt="CTA POD 02&nbsp;&nbsp;&nbsp;&nbsp;&#9658;">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </label>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--<![endif]-->
+                    <!-- DROPDOWN FOR WEBKIT -->
+                  </td>
+                </tr>
+              </table>
+              <!-- DropDown standard pod end -->
+
+
+              <!-- DropDown carousel pod start -->
+              <table class="fluid" width="600" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td align="center" valign="top">
+                    <table width="100%" class="dropdown_standard" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td class="dropdown_standard" valign="top" align="left" style="display:block; width:auto; max-height:inherit; overflow:visible; float:none;">
+                          <div class="dropdown_standard" style="display:block; width:auto; max-height:inherit; overflow:visible; float:none;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td class="mobile_padding" align="left" valign="top" style="padding:0 40px 20px 40px;">
+                                  <table class="dropdown_standard" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#101018">
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img class="fluid" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426760_line_curve.jpg" alt="" border="0" style="display:block;" width="520" height="auto" >
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:10px 0 10px 0;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                          <tr>
+                                            <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                              <a href="#LINK POD 03" target="_blank" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly; text-decoration:none;">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_pod03.png" width="240" height="auto" border="0" style="display:block;" alt="TITLE POD 03">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                          <tr>
+                                            <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:21px; color:#ffffff; mso-line-height-rule:exactly;padding:5px 0 10px 0;">
+                                              POD - CAROUSEL FALLBACK / BUTTON
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" valign="top" style="padding:10px 0 10px 0;">
+                                        <a href="#LINK POD 03" target="_blank;">
+                                          <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/carousel_image01.png" width="500" height="auto" style="display:block;" border="0" alt="">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tr>
+                                      <td align="left" valign="top" style="color:#FF1C0C;">
+                                        <!-- CTA live text -->
+                                        <center>
+                                          <div>
+                                            <!--[if mso]>
+                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#LINK POD 03" style="height:33px;v-text-anchor:middle;width:200px;" arcsize="16%" strokecolor="#FF1C0C" fillcolor="#101018">
+                                              <w:anchorlock/>
+                                              <center style="color:#FF1C0C;font-family:'Open Sans','Helvetica Neue',Helvetica,sans-serif;font-size:12px;font-weight:normal;">
+                                                DOWNLOAD NOW
+                                              </center>
+                                            </v:roundrect>
+                                            <![endif]-->
+                                            <a href="#LINK POD 03" style="background-color:#101018;border:1px solid #FF1C0C;border-radius:5px;color:#FF1C0C;display:inline-block;font-family:'Open Sans','Helvetica Neue',Helvetica,sans-serif;font-size:12px;font-weight:normal;line-height:33px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">
+                                              DOWNLOAD NOW
+                                            </a>
+                                          </div>
+                                        </center>
+                                        <!-- CTA live text -->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- DROPDOWN FOR WEBKIT -->
+                    <!--[if !mso]><!-->
+                    <table width="100%" class="dropdown_webkit" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td class="dropdown_webkit" valign="top" align="left" style="width:0;max-height:0;overflow:hidden;float:left;display:none">
+                          <div class="dropdown_webkit" style="display:none;max-height:0px;overflow:hidden">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td class="mobile_padding" align="left" valign="top" style="padding:0 40px 20px 40px;">
+                                  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#101018">
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img class="fluid" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426760_line_curve.jpg" alt="" border="0" style="display:block;" width="520" height="21" >
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top">
+                                        <input type="checkbox" id="input_button_dropdown_carousel_01" />
+                                        <label class="toggle_container" for="input_button_dropdown_carousel_01" >
+                                          <div class="toggle_under header_copy" style="padding:10px 0 0 0; background-color:#101018;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                                  <a href="#LINK POD 03" target="_blank" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly; text-decoration:none;">
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_pod03.png" width="240" height="auto" border="0" style="display:block;" alt="TITLE POD 03">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:21px; color:#ffffff; mso-line-height-rule:exactly;">
+                                                  POD - CAROUSEL / BUTTON
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <div class="image_toggle_single_line"></div>
+                                          <div class="dropdown_container">
+                                            <table class="carousel_content" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#101018" style="width:100%">
+                                              <tr>
+                                                <td align="left" valign="top" style="padding:0 0 0 0;">
+                                                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                    <tr>
+                                                      <td align="center" valign="top" style="padding:10px 0 0 0;">
+                                                        <!-- iPhone 5 fallback start  -->
+                                                        <table class="iphone5_carousel" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                          <tr>
+                                                            <td align="left" valign="top">
+                                                              <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                                <tr>
+                                                                  <td align="center" valign="top" style="padding:30px 0 10px 0;">
+                                                                    <a href="#LINK POD 03" target="_blank;">
+                                                                      <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/carousel_image01.png" width="500" height="auto" style="display:block;" border="0">
+                                                                    </a>
+                                                                  </td>
+                                                                </tr>
+                                                              </table>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                        <!-- iPhone 5 fallback end  -->
+                                                        <div class="interactive" style="mso-hide:all;display:none;max-height:0;overflow:hidden;">
+                                                          <input type="radio" id="slide-1" name="scroll" checked="checked" style="display:none;max-height:0;visibility:hidden;">
+                                                          <input type="radio" id="slide-2" name="scroll" style="display:none;max-height:0;visibility:hidden;">
+                                                          <input type="radio" id="slide-3" name="scroll" style="display:none;max-height:0;visibility:hidden;">
+                                                          <div class="carousel-wrapper">
+                                                            <label class="button1" for="slide-1" style="display:none;max-height:0;visibility:hidden;"></label>
+                                                            <label class="button2" for="slide-2" style="display:none;max-height:0;visibility:hidden;"></label>
+                                                            <label class="button3" for="slide-3" style="display:none;max-height:0;visibility:hidden;"></label>
+                                                            <div class="scroll">
+                                                              <div class="slide1-content">
+                                                                <span class="block" style="width:300px; height:178px; background-image:url(carousel_image01.png); background-size:cover;">
+                                                                  <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/carousel_image01.png" class="hide" style="display:block;" border="0" width="500" height="296" alt="">
+                                                                </span>
+                                                              </div>
+                                                              <div class="slide2-content">
+                                                                <span class="block" style="width:300px; height:178px; background-image:url(carousel_image01.png); background-size:cover;">
+                                                                  <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/carousel_image01.png" class="hide" style="display:block;" border="0" width="500" height="296" alt="">
+                                                                </span>
+                                                              </div>
+                                                              <div class="slide3-content">
+                                                                <span class="block" style="width:300px; height:178px; background-image:url(carousel_image01.png); background-size:cover;">
+                                                                  <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/carousel_image01.png" class="hide" style="display:block;" border="0" width="500" height="296" alt="">
+                                                                </span>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="fallback-carousel" style="padding-top:20px;">
+                                                          <a href="#LINK POD 03" >
+                                                            <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/carousel_image01.png" width="100%" height="auto" style="display:block;" border="0" alt="">
+                                                          </a>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top">
+                                                  <center>
+                                                    <div style="margin:0 auto;">
+                                                      <div style="margin:0 auto;mso-hide:all;">
+                                                        <table align="center" cellpadding="0" cellspacing="0" height="33" width="200" style="margin:0 auto;mso-hide:all;">
+                                                          <tr>
+                                                            <td class="cta" align="center" bgcolor="#ffffff" height="33" style="vertical-align:middle;color:#FF1C0C;display:block;background-color:#101018;border:1px solid #FF1C0C;border-radius:5px;mso-hide:all;" width="200">
+                                                              <a href="#LINK POD 03" target="_blank" style="font-size:13px;-webkit-text-size-adjust:none;font-weight:normal;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; line-height:33px; text-decoration:none;line-height:33px;width:200px;display:inline-block;">
+                                                                <span style="color:#FF1C0C">DOWNLOAD NOW</span>
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </div>
+                                                    </div>
+                                                  </center>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </label>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--<![endif]-->
+                    <!-- DROPDOWN FOR WEBKIT -->
+                  </td>
+                </tr>
+              </table>
+              <!-- DropDown carousel pod end -->
+
+
+              <!-- DropDown video pod start -->
+              <table class="fluid" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td align="center" valign="top">
+                    <table width="100%" class="dropdown_standard" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td class="dropdown_standard" valign="top" align="left" style="display:block; width:auto; max-height:inherit; overflow:visible; float:none;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td class="mobile_padding" align="left" valign="top" style="padding:0 40px 20px 40px;">
+                                <div class="dropdown_standard" style="display:block; width:auto; max-height:inherit; overflow:visible; float:none;">
+                                  <table class="dropdown_standard" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#101018">
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img class="fluid" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426760_line_curve.jpg" alt="" border="0" style="display:block;" width="520" height="21">
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:10px 0 30px 0;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                          <tr>
+                                            <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                              <a href="#LINK POD 04" target="_blank" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly; text-decoration:none;">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_pod04.png" width="240" height="auto" border="0" style="display:block;" alt="TITLE POD 04">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                          <tr>
+                                            <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:21px; color:#ffffff; mso-line-height-rule:exactly;padding:5px 0 0 0;">
+                                              POD - VIDEO FALLBACK
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <div class="video-fallback">
+                                          <a href="#LINK POD 04" target="_blank">
+                                            <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/video_placeholder.jpg" width="520" height="auto" alt="" border="0" style="display:block;">
+                                          </a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- DROPDOWN FOR WEBKIT -->
+                    <!--[if !mso]><!-->
+                    <table width="100%" class="dropdown_webkit" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td class="dropdown_webkit" valign="top" align="left" style="width:0;max-height:0;overflow:hidden;float:left;display:none">
+                          <div class="dropdown_webkit" style="display:none;max-height:0px;overflow:hidden">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td class="mobile_padding" align="left" valign="top" style="padding:0 40px 20px 40px;">
+                                  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#101018">
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img class="fluid" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426760_line_curve.jpg" alt="" border="0" style="display:block;" width="520" height="auto" >
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding:0">
+                                        <input type="checkbox" id="input_button_dropdown_video_01" />
+                                        <label class="toggle_container" for="input_button_dropdown_video_01" >
+                                          <div class="toggle_under header_copy" style="padding:10px 0 0 0; background-color:#101018;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                                  <a href="#LINK POD 04" target="_blank" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly; text-decoration:none;">
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/title_pod04.png" width="240" height="auto" border="0" style="display:block;" alt="TITLE POD 04">
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:21px; color:#ffffff; mso-line-height-rule:exactly;">
+                                                  POD - VIDEO
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <div class="image_toggle_single_line"></div>
+                                          <div class="dropdown_container">
+                                            <table class="video_content" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#101018" style="width:100%">
+                                              <tr>
+                                                <td align="center" valign="top" style="padding:30px 0 30px 0;">
+                                                  <div class="video-wrapper" style="background:url('video_placeholder.png');width:100%;height:auto;display:none;background-size:cover;background-repeat:no-repeat;max-width:520px;">
+                                                    <video class="fluid" width="100%" height="auto" controls="controls" poster="video_placeholder.png" src="https://s3-eu-west-1.amazonaws.com/f1bucket/video.mp4" preload="auto">
+                                                      <a href="#LINK POD 04" target="_blank">
+                                                        <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/video_placeholder.png" width="520" height="auto" alt="" border="0" style="display:block;">
+                                                      </a>
+                                                    </video>
+                                                  </div>
+                                                  <div class="video-fallback">
+                                                    <a href="#LINK POD 04" target="_blank">
+                                                      <img class="fluid" src="https://s3-eu-west-1.amazonaws.com/f1bucket/Full_Kinetic/video_placeholder.jpg" width="100%" height="auto" alt="" border="0" style="display:block;">
+                                                    </a>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </label>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--<![endif]-->
+                    <!-- DROPDOWN FOR WEBKIT -->
+                  </td>
+                </tr>
+              </table>
+              <!-- DropDown video pod end -->
+
+
+              <!-- Weather pod start -->
+              <table class="fluid" width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                  <td align="left" valign="top" style="padding:0 0 30px 0;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#282831">
+                      <tr>
+                        <td class="mobile_padding_weather" align="left" valign="top" style="padding:20px 40px 20px 40px;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td align="left" valign="top" style="padding:0px 0 0px 0;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tr>
+                                    <td align="left" valign="top">
+                                      <table width="65%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                        <tr>
+                                          <td align="left" valign="top" style="padding:0 0 10px 0;">
+                                            <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/424413_title_weather.png" width="136" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly;" alt="WEATHER REPORT">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:23px; color:#ffffff; mso-line-height-rule:exactly;">
+                                            Pulses rise with temperatures set to fall
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" valign="top" style="padding:20px 0 10px 0;">
+                                            <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/424405_forecast.png" width="77" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly;" alt="FORECAST">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:18px; line-height:23px; color:#ffffff; mso-line-height-rule:exactly;">
+                                            <span style="font-size:22px;color:#ffffff;"><b>29&deg;C</b></span>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <table width="20%" border="0" cellspacing="0" cellpadding="0" align="right">
+                                        <tr>
+                                          <td class="weather_icon" align="right" valign="top" style="padding:0 7px 0 0;">
+                                            <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/424135_sun.png" alt="" border="0" width="51" height="51" style="display:block;">
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Weather pod end -->
+
+
+              <!-- CTA lower pod start -->
+              <table class="fluid" width="600" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#282831">
+                <tr>
+                  <td class="mobile_padding" align="left" valign="top" style="padding:30px 40px 30px 40px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td align="left" valign="top" style="padding:0 0 10px 0;">
+                          <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/407115_dont_miss_a_millisecond.png" width="240" height="auto" border="0" style="display:block; font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#8b8b90; mso-line-height-rule:exactly;" alt="DON'T MISS A MILLISECOND">
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; line-height:20px; color:#FFFFFF; mso-line-height-rule:exactly; padding:0">
+                         With races across the world, it can be tough to remember when to watch. Click the button below to add every practice, qualifying and race of the 2018 season to your calendar. And don’t miss a single breath-taking moment.
+                        </td>
+                      </tr>
+                    </table>
+                    <center>
+                      <div>
+
+                        <!-- Edit here for CTA Outlook -->
+                        <!--[if mso]>
+                          <table width="520" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td align="left" valign="top" style="padding:20px 0 0 0;">
+                                <table width="520" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff">
+                                  <tr>
+                                    <td align="center" valign="top" style="width:520px;height:52px;background-color:#ffffff;">
+                                      <div style="line-height:15px; height:15px; font-size:1px; mso-line-height-rule: exactly;-webkit-text-size-adjust:none;">&nbsp;</div>
+                                      <a href="https://www.formula1.com/sp/static/f1/2018/calendar/ical.ics" target="_blank" style="font-size: 16px; font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; color: #000000;text-decoration: none;border-radius: 5px; border: 1px solid #ffffff; display: inline-block;">
+                                        <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/424134_lower_cta.png" width="250" height="auto" border="0" style="display:block;font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; color:#000000;" alt="ADD TO CALENDAR">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        <![endif]-->
+
+                        <!-- Edit here for CTA -->
+                        <!--[if !mso]><!-->
+                        <table class="fluid" width="520" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td align="left" valign="top" style="padding:20px 0 0 0;">
+                              <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td class="cta_pad_lower" align="center" style="border-radius:5px;" bgcolor="#FFFFFF">
+                                    <a href="https://www.formula1.com/sp/static/f1/2018/calendar/ical.ics" target="_blank" style="font-size: 16px; font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; color: #000000;text-decoration: none;border-radius: 5px; padding: 19px 133px; border: 1px solid #FFFFFF; display: inline-block;">
+                                      <img class="fluid_cta_text" src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/424134_lower_cta.png" width="250" height="auto" border="0" style="display:block; font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:16px; color:#000000;" alt="ADD TO CALENDAR">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--<![endif]-->
+
+                      </div>
+                    </center>
+                  </td>
+                </tr>
+              </table>
+              <!-- CTA lower pod end -->
+
+
+              <!-- Engineer my email pod start -->
+              <table class="fluid" width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                  <td class="mobile_padding" align="left" valign="top" style="padding:30px 40px 10px 40px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td align="left" valign="top" style="border-top:1px solid #5B5B61;border-bottom:1px solid #5B5B61;padding:30px 0 30px 0;">
+                          <table border="0" cellspacing="0" cellpadding="0" align="left">
+                            <tr>
+                              <td align="left" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:13px; line-height:14px; color:#8B8B90; padding:0 0 0 10px;">
+                                <a href="http://www.formula1.com/en/subscribe/download-the-official-F1--app.html" target="_blank" style="text-decoration:none;color:#8B8B90;">
+                                  <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/405311_engineer_my_email.png" width="218" height="auto" border="0" style="display:block;" alt="ENGINEER MY EMAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9658;">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Engineer my email pod end -->
+              <!-- Footer start -->
+              <table class="fluid" width="600" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#101018">
+                <tr>
+                  <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td class="mobile_padding_footer" align="left" valign="top" style="padding:0px 30px 20px 0px;">
+                          <table class="fluid" width="21%" border="0" cellspacing="0" cellpadding="0" align="left">
+                            <tr>
+                              <td align="center" valign="top" style="padding:20px 0 0 10px;">
+                                <a href="http://www.f1.com" target="_blank">
+                                  <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426757_icon_footer_logo_f1.png" width="50" height="12" border="0" style="display:block;" alt="F1">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="fluid" width="78%" border="0" cellspacing="0" cellpadding="0" align="left">
+                            <tr>
+                              <td align="left" valign="top">
+                                <table class="footer_links" width="24%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                    <td class="footer_links_padding" align="center" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; line-height:14px; color:#8B8B90; padding:20px 0 0 20px;">
+                                      <a href="https://$CANTREAD$" target="_blank" style="text-decoration:none;color:#8B8B90;">
+                                        View in browser
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table class="footer_links_unsub" width="24%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                    <td class="footer_links_padding" align="center" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; line-height:14px; color:#8B8B90; padding:20px 0 0 20px;">
+                                      <a href="https://$UNSUB$" target="_blank" style="text-decoration:none;color:#8B8B90;">
+                                        Unsubscribe
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table class="footer_links" width="24%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                    <td class="footer_links_padding" align="center" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; line-height:14px; color:#8B8B90; padding:20px 0 0 30px;">
+                                      <a href="https://account.formula1.com/#/en/privacy-policy" target="_blank" style="text-decoration:none;color:#8B8B90;">
+                                        Privacy Policy
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table class="footer_links" width="24%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                    <td class="footer_links_padding" align="center" valign="top" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; line-height:14px; color:#8B8B90; padding:20px 0 0 20px;">
+                                      <a href="https://www.formula1.com/en/toolbar/contacts.html" target="_blank" style="text-decoration:none;color:#8B8B90;">
+                                        Contact
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr>
+                        <td align="center" valign="top" style="padding:0 0 50px 0;">
+                          <table width="216" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td align="center" valign="top">
+                                <table border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                    <td align="left" valign="top" style="padding:10px;">
+                                      <a href="http://twitter.com/F1" target="_blank">
+                                        <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426758_icon_footer_twitter.png" width="32" height="32" border="0" style="display:block;" alt="">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                    <td align="left" valign="top" style="padding:10px;">
+                                      <a href="http://www.facebook.com/Formula1/" target="_blank">
+                                        <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426755_icon_footer_facebook.png" width="32" height="32" border="0" style="display:block;" alt="">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                    <td align="left" valign="top" style="padding:10px;">
+                                      <a href="http://www.youtube.com/user/Formula1" target="_blank">
+                                        <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426759_icon_footer_youtube.png" width="32" height="32" border="0" style="display:block;" alt="">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                    <td align="left" valign="top" style="padding:10px;">
+                                      <a href="http://www.instagram.com/f1/" target="_blank">
+                                        <img src="https://i.emlfiles.com/cmpimg/6/1/2/2/1/2/files/426756_icon_footer_instagram.png" width="32" height="32" border="0" style="display:block;" alt="">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Footer end -->
+              <!-- Content end -->
+            </td>
+          </tr>
+        </table>
+        <!--  Device Width Wrapper -->
+        <!-- Gmail fix to render desktop version on mobile -->
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="gmail_hidden" style="min-width:600px;">
+              <div class="gmail" style="white-space:nowrap;font:15px courier;line-height:0;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+            </td>
+          </tr>
+        </table>
+        <!-- Gmail fix to render desktop version on mobile -->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
